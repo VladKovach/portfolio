@@ -11,13 +11,39 @@
 
 .info {
   font-family: cursive;
-  margin: 0 20px;
+  margin: 0 calc(20px + (200 - 20) * ((100vw - 320px) / (1780 - 320)));
   flex: 1;
   font-size: 20px;
   line-height: 1.6;
-  text-align: justify;
+  @media (min-width: 1780px) {
+    margin: 0 200px;
+  }
 }
-
+.link {
+  color: #3498db;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s ease, border-bottom-color 0.3s ease;
+  position: relative;
+  &:hover {
+    color: #1abc9c;
+    border-bottom-color: #1abc9c;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #1abc9c;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+  }
+  &:hover::after {
+    width: 100%;
+  }
+}
 .my_foto {
   border-radius: 15% 1%;
   border: 5px solid rgba(255, 255, 255, 0.6);

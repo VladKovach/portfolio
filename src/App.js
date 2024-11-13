@@ -18,6 +18,12 @@ export default function App() {
       <TicTack />
 
       <CardGalery />
-    </div>
+      <p className="about_this_page_text">
+        This portfolio showcases a selection of my projects, reflecting both my past experiences and
+        ongoing growth as a developer. While this is not an exhaustive list of all my work, I am
+        continuously adding new projects. It represents my history and, at the same time, serves as
+        my portfolio for job opportunities.
+      </p> 
+    </div> 
   );
 }

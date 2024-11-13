@@ -117,6 +117,9 @@ code {
   max-width: 2000px;
   margin: 0 auto;
 }
+.about_this_page_text{
+  margin: 20px;
+}
 /* Beauty Button */
 .button-30 {
   align-items: center;
