@@ -9,9 +9,113 @@ const PersonalInfo = () => {
       <div className={classes.my_info_container}>
         <div className={classes.info}>
           <p>
-            I am Vladyslav Kovachuk, a highly motivated junior+ front-end developer with a strong
-            passion for continuous learning and growth.
+            My name is Vladyslav Kovachuk, and I am a Front-end Developer from Ukraine currently
+            living in Germany.
           </p>
+          <p>
+            <strong>Work Experience:</strong>
+          </p>
+          <ul>
+            <li>
+              <strong>
+                Front-end Developer (04/2023 - 02/2024) at the Ukrainian company{" "}
+                <a
+                  href="https://posterprint.ua"
+                  className={classes.link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  PosterPrint
+                </a>
+              </strong>
+              <ul>
+                <li>Developed and maintained responsive web pages using React.js and Sass.</li>
+                <li>
+                  Collaborated with the design team to implement modern, user-friendly UI/UX
+                  designs.
+                </li>
+                <li>
+                  Optimized website performance using Lighthouse, resulting in faster load times and
+                  an improved user experience.
+                </li>
+                <li>
+                  Integrated third-party APIs such as{" "}
+                  <a
+                    href="https://www.liqpay.ua/doc"
+                    className={classes.link}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Card Payment
+                  </a>{" "}
+                  and{" "}
+                  <a
+                    href="https://developers.novaposhta.ua/documentation"
+                    className={classes.link}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Delivery
+                  </a>
+                  .
+                </li>
+                <li>Worked closely with backend developers to ensure seamless data integration.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>
+                Front-end Developer (03/2024 - 08/2024) at the Ukrainian-American company{" "}
+                <a
+                  href="https://2event.com"
+                  className={classes.link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  2EVENT
+                </a>
+              </strong>
+              <ul>
+                <li>
+                  Key Responsibility: Collaborated with the team to implement new designs and
+                  functionality for creating events.
+                </li>
+
+                <li>Built dynamic, reusable components with Vue.js.</li>
+                <li>
+                  Worked with different component frameworks and libraries such as{" "}
+                  <a
+                    href="https://vuetifyjs.com/en/"
+                    className={classes.link}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Vuetify
+                  </a>{" "}
+                  and{" "}
+                  <a
+                    href="https://element-plus.org/"
+                    className={classes.link}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Element+
+                  </a>
+                  . Implemented and heavily customized{' '}
+                  <a
+                    href="https://vcalendar.io/"
+                    className={classes.link}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    VCalendar
+                  </a>
+                  .
+                </li>
+                <li>Collaborated with teams across different time zones.</li>
+              </ul>
+            </li>
+          </ul>
+          
           <p>
             <strong>Stack:</strong> HTML, CSS, JS, TypeScript, Sass, CSS-in-JS, Styled Components,
             JQuery, React, Redux, RTK, NextJS, Vue, NuxtJS, Git, GitHub.
@@ -21,12 +125,11 @@ const PersonalInfo = () => {
             <a href={pdf} className={classes.link} target="_blank" rel="noreferrer">
               Master of Science{" "}
               <svg
-              
                 xmlns="http://www.w3.org/2000/svg"
-                  width="20px"
+                width="20px"
                 height="20px"
                 viewBox="0 0 24 24"
-                  fill="none"
+                fill="none"
               >
                 <path
                   d="M10 15H12C15.3137 15 18 12.3137 18 9C18 5.68629 15.3137 3 12 3H8C4.68629 3 2 5.68629 2 9C2 10.5367 2.57771 11.9385 3.52779 13M16 21C19.3137 21 22 18.3137 22 15C22 13.4633 21.4223 12.0615 20.4722 11M12 21C8.68629 21 6 18.3137 6 15C6 11.6863 8.68629 9 12 9H14"
@@ -40,9 +143,9 @@ const PersonalInfo = () => {
           </p>
           <p>
             <strong>Languages:</strong> Ukrainian: Native <br />
-            English: B1 <br />
-            German: B1 <br />
-            Russian: B1
+            English: B1-B2 <br />
+            German: B1-B2 <br />
+            Russian: B2
           </p>
         </div>
         <img src={myFoto} width={400} alt="My Foto" className={classes.my_foto} />

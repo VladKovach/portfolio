@@ -12,8 +12,15 @@ html {
   margin: 0;
   width: 100%;
   overflow-x: hidden;
-  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #ffd1ff);
-  color: #fff;
+  background: linear-gradient(
+    135deg,
+    #6a85b6,
+    /* Soft blue */ #bac8e0,
+    /* Light gray-blue */ #eef2f3,
+    /* Almost white, for a gentle gradient */ #ffe0e0,
+    /* Soft pink */ #d4a5a5 /* Muted blush tone */
+  ); /* Balanced and elegant gradient */
+  color: #fff; /* Keeps the text white */
   -ms-overflow-style: none; /* IE и Edge */
   -webkit-overflow-scrolling: touch; /* iOS */
   overflow: -moz-scrollbars-none; /* Firefox */
@@ -21,8 +28,10 @@ html {
   -moz-user-select: none; /* Firefox */
   -webkit-user-select: none; /* Safari */
   user-select: none;
-  font-family: cursive;
+  font-family: "Poppins", sans-serif; /* A modern and clean font for elegance */
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8); /* Add slight shadow to improve text readability */
 }
+
 input,
 button,
 div,
@@ -117,8 +126,11 @@ code {
   max-width: 2000px;
   margin: 0 auto;
 }
-.about_this_page_text{
+.about_this_page_text {
+  font-size: 22px;
   margin: 20px;
+  text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.9); /* Dark shadow to create contrast */
+
 }
 /* Beauty Button */
 .button-30 {
