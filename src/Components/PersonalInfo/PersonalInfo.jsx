@@ -100,7 +100,7 @@ const PersonalInfo = () => {
                   >
                     Element+
                   </a>
-                  . Implemented and heavily customized{' '}
+                  . Implemented and heavily customized{" "}
                   <a
                     href="https://vcalendar.io/"
                     className={classes.link}
@@ -115,10 +115,10 @@ const PersonalInfo = () => {
               </ul>
             </li>
           </ul>
-          
+
           <p>
             <strong>Stack:</strong> HTML, CSS, JS, TypeScript, Sass, CSS-in-JS, Styled Components,
-            JQuery, React, Redux, RTK, NextJS, Vue, NuxtJS, Git, GitHub.
+            JQuery, GraphQL, React, Redux, RTK, NextJS, Vue, NuxtJS, Git, GitHub, REST.
           </p>
           <p>
             <strong>Education:</strong>
