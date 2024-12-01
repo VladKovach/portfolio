@@ -118,7 +118,7 @@ const PersonalInfo = () => {
 
           <p>
             <strong>Stack:</strong> HTML, CSS, JS, TypeScript, Sass, CSS-in-JS, Styled Components,
-            JQuery, GraphQL, React, Redux, RTK, NextJS, Vue, NuxtJS, Git, GitHub, REST.
+            JQuery, GraphQL, React, Redux, RTK, NextJS, Angular, Vue, NuxtJS, Git, GitHub, REST.
           </p>
           <p>
             <strong>Education:</strong>
