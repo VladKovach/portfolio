@@ -143,7 +143,7 @@ const PersonalInfo = () => {
           </p>
           <p>
             <strong>Languages:</strong> Ukrainian: Native <br />
-            English: B1-B2 <br />
+            English: B2 <br />
             German: B1-B2 <br />
             Russian: B2
           </p>
