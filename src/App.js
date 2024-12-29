@@ -6,6 +6,7 @@ import { PosterPrint } from "./Components/Projects/PosterPrint/PosterPrint";
 import { PlantShop } from "./Components/Projects/PlantShop/PlantShop";
 import CardGalery from "./Components/Projects/CardGalery/CardGalery";
 import { Restourant } from "./Components/Projects/Restourant/Restourant";
+import { Aimgame } from "./Components/Projects/Aimgame/Aimgame";
 export default function App() {
   return (
     <div className="main_page_wrapper">
@@ -15,9 +16,12 @@ export default function App() {
       <PosterPrint />
       <PlantShop />
       <Restourant />
-      <TicTack />
-
       <CardGalery />
+      <p className="works_title">Let's have some fun and play games)))</p>
+
+      <TicTack />
+      <Aimgame/>
+     
       <p className="about_this_page_text">
         This portfolio showcases a selection of my projects, reflecting both my past experiences and
         ongoing growth as a developer. While this is not an exhaustive list of all my work, I am
