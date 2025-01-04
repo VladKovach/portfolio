@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.3b63e935.css",
-    "main.js": "/portfolio/static/js/main.8afeb5df.js",
+    "main.js": "/portfolio/static/js/main.a2a708c8.js",
     "static/media/plantShop.png": "/portfolio/static/media/plantShop.282bda96c831ecbea57f.png",
     "static/media/piano3.jpg": "/portfolio/static/media/piano3.f6b7f3029a29269ae669.jpg",
     "static/media/piano2.jpg": "/portfolio/static/media/piano2.bbcfefa0dde74bed0671.jpg",
@@ -16,10 +16,10 @@
     "static/media/Vladuslav_CV_Foto.jpg": "/portfolio/static/media/Vladuslav_CV_Foto.bc16654bf35a96529d36.jpg",
     "index.html": "/portfolio/index.html",
     "main.3b63e935.css.map": "/portfolio/static/css/main.3b63e935.css.map",
-    "main.8afeb5df.js.map": "/portfolio/static/js/main.8afeb5df.js.map"
+    "main.a2a708c8.js.map": "/portfolio/static/js/main.a2a708c8.js.map"
   },
   "entrypoints": [
     "static/css/main.3b63e935.css",
-    "static/js/main.8afeb5df.js"
+    "static/js/main.a2a708c8.js"
   ]
 }
