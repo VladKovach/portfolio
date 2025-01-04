@@ -118,7 +118,7 @@ const PersonalInfo = () => {
 
           <p>
             <strong>Stack:</strong> HTML, CSS, JS, TypeScript, Sass, CSS-in-JS, Styled Components,
-            JQuery, GraphQL, React, Redux, RTK, NextJS, Angular, Vue, NuxtJS, Git, GitHub, REST.
+            JQuery, GraphQL, React, Redux, RTK, NextJS, Angular, Vue, NuxtJS, Git, GitHub, REST, JIRA,.
           </p>
           <p>
             <strong>Education:</strong>
@@ -162,7 +162,7 @@ const PersonalInfo = () => {
           <p>
             <strong>Languages:</strong> Ukrainian: Native <br />
             English: B2 <br />
-            German: B1-B2 <br />
+            German: B2 <br />
             Russian: B2
           </p>
         </div>
