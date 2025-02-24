@@ -10,7 +10,7 @@
 }
 
 .info {
-  font-family: cursive;
+  font-family: inherit;
   margin: 0 calc(20px + (200 - 20) * ((100vw - 320px) / (1780 - 320)));
   flex: 1;
   font-size: 20px;
