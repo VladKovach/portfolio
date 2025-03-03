@@ -1,10 +1,10 @@
 import React from "react";
 import classes from "./personalInfo.module.scss";
-import myFoto from "../../assets/images/Vladuslav_CV_Foto.jpg";
+import myFoto from "../../assets/images/Vladyslav_CV_Foto.jpg";
 import pdf from "./magistr_compressed_pdf.pdf";
 import bewertung from './bewertung_magistr.pdf'
 const PersonalInfo = () => {
-  return (
+  return ( 
     <div className={classes.info_wrapper}>
       <div className={classes.my_info_container}>
         <div className={classes.info}>
