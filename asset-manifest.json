@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.d60218b6.css",
-    "main.js": "/portfolio/static/js/main.a2a708c8.js",
+    "main.js": "/portfolio/static/js/main.fe56a664.js",
+    "static/media/Vladyslav_CV_Foto.jpg": "/portfolio/static/media/Vladyslav_CV_Foto.f85433aa90177b7b6493.jpg",
     "static/media/plantShop.png": "/portfolio/static/media/plantShop.282bda96c831ecbea57f.png",
     "static/media/piano3.jpg": "/portfolio/static/media/piano3.f6b7f3029a29269ae669.jpg",
     "static/media/piano2.jpg": "/portfolio/static/media/piano2.bbcfefa0dde74bed0671.jpg",
@@ -13,13 +14,12 @@
     "static/media/piano4.jpg": "/portfolio/static/media/piano4.dd42c6215e164eb67872.jpg",
     "static/media/bewertung_magistr.pdf": "/portfolio/static/media/bewertung_magistr.0d2032ee6c47901c741b.pdf",
     "static/media/DancingScript-VariableFont_wght.ttf": "/portfolio/static/media/DancingScript-VariableFont_wght.d02a1ee17643667e9808.ttf",
-    "static/media/Vladuslav_CV_Foto.jpg": "/portfolio/static/media/Vladuslav_CV_Foto.bc16654bf35a96529d36.jpg",
     "index.html": "/portfolio/index.html",
     "main.d60218b6.css.map": "/portfolio/static/css/main.d60218b6.css.map",
-    "main.a2a708c8.js.map": "/portfolio/static/js/main.a2a708c8.js.map"
+    "main.fe56a664.js.map": "/portfolio/static/js/main.fe56a664.js.map"
   },
   "entrypoints": [
     "static/css/main.d60218b6.css",
-    "static/js/main.a2a708c8.js"
+    "static/js/main.fe56a664.js"
   ]
 }
