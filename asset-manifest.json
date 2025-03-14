@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.1bb8fae2.css",
-    "main.js": "/portfolio/static/js/main.09ecc090.js",
+    "main.js": "/portfolio/static/js/main.73dc2081.js",
     "static/media/Vladyslav_CV_Foto.jpg": "/portfolio/static/media/Vladyslav_CV_Foto.f85433aa90177b7b6493.jpg",
     "static/media/plantShop.png": "/portfolio/static/media/plantShop.282bda96c831ecbea57f.png",
     "static/media/piano3.jpg": "/portfolio/static/media/piano3.f6b7f3029a29269ae669.jpg",
+    "static/media/b2zertifikat.pdf": "/portfolio/static/media/b2zertifikat.3c434f44bcc44fbfbe0a.pdf",
     "static/media/piano2.jpg": "/portfolio/static/media/piano2.bbcfefa0dde74bed0671.jpg",
     "static/media/restourant.png": "/portfolio/static/media/restourant.002c63398b9c76947bb4.png",
     "static/media/posterPrint.png": "/portfolio/static/media/posterPrint.621ec5c5a0bbe05b92b6.png",
@@ -16,10 +17,10 @@
     "static/media/DancingScript-VariableFont_wght.ttf": "/portfolio/static/media/DancingScript-VariableFont_wght.d02a1ee17643667e9808.ttf",
     "index.html": "/portfolio/index.html",
     "main.1bb8fae2.css.map": "/portfolio/static/css/main.1bb8fae2.css.map",
-    "main.09ecc090.js.map": "/portfolio/static/js/main.09ecc090.js.map"
+    "main.73dc2081.js.map": "/portfolio/static/js/main.73dc2081.js.map"
   },
   "entrypoints": [
     "static/css/main.1bb8fae2.css",
-    "static/js/main.09ecc090.js"
+    "static/js/main.73dc2081.js"
   ]
 }
