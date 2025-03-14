@@ -119,8 +119,8 @@ const PersonalInfo = () => {
 
           <p>
             <strong>Stack:</strong> HTML, CSS, JS, TypeScript, Sass, CSS-in-JS, Styled Components,
-            JQuery, GraphQL, React, Redux, RTK, NextJS, Angular, Vue, CI/CD, PWAs, Website
-            Performance Auditing & Optimization (DevTools, Lighthouse), Jest, Git, GitHub, REST,
+            JQuery, GraphQL, React, Redux, RTK, NextJS, Angular, Vue, NodeJs, CI/CD, PWAs, Website
+            Performance Auditing & Optimization (DevTools, Lighthouse), Jest, Git, GitHub,
             JIRA,.
           </p>
           <p>
