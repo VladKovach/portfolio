@@ -3,6 +3,7 @@ import classes from "./personalInfo.module.scss";
 import myFoto from "../../assets/images/Vladyslav_CV_Foto.jpg";
 import pdf from "./magistr_compressed_pdf.pdf";
 import bewertung from "./bewertung_magistr.pdf";
+import b2zertifikat from "./b2zertifikat.pdf";
 const PersonalInfo = () => {
   return (
     <div className={classes.info_wrapper}>
@@ -164,7 +165,16 @@ const PersonalInfo = () => {
             <strong>Languages:</strong>
             <li>Ukrainian: Native</li>
             <li>English: B2-C1</li>
-            <li>German: B2-C1</li>
+            <li>
+              German:{" "}
+              <a href={b2zertifikat} 
+              className={classes.link} 
+              target="_blank" 
+              rel="noreferrer">
+                B2
+              </a>
+              -C1
+            </li>
             <li>Russian: C1</li>
           </ul>
         </div>
