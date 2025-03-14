@@ -4,23 +4,23 @@
 
 .my_info_container {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap; // Allows content to wrap on smaller screens
+  flex-wrap: wrap; // Allows text to go below the image if needed
+  gap: 20px; // Space between text and image
+  align-items: flex-start; // Aligns text to the top of the image
 }
 
 .info {
   font-family: inherit;
-  margin: 0 calc(20px + (200 - 20) * ((100vw - 320px) / (1780 - 320)));
   flex: 1;
+  margin-left: 10px;
   font-size: 20px;
   line-height: 1.6;
   @media (min-width: 1780px) {
     margin: 0 200px;
   }
-} 
+}
 .link {
-  color: #FFC107         ;
+  color: #ffc107;
   font-weight: bold;
   text-decoration: none;
   border-bottom: 2px solid transparent;
@@ -57,14 +57,14 @@
   transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .my_info_container {
     flex-direction: column;
-    text-align: center;
+    align-items: center;
   }
 
   .info {
-    margin-right: 0;
+    margin: 0;
     margin-bottom: 20px;
   }
 }
