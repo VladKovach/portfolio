@@ -1,23 +1,26 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.1bb8fae2.css",
-    "main.js": "/portfolio/static/js/main.99e70bb8.js",
+    "main.js": "/portfolio/static/js/main.73dc2081.js",
     "static/media/Vladyslav_CV_Foto.jpg": "/portfolio/static/media/Vladyslav_CV_Foto.f85433aa90177b7b6493.jpg",
     "static/media/plantShop.png": "/portfolio/static/media/plantShop.282bda96c831ecbea57f.png",
     "static/media/piano3.jpg": "/portfolio/static/media/piano3.f6b7f3029a29269ae669.jpg",
+    "static/media/b2zertifikat.pdf": "/portfolio/static/media/b2zertifikat.3c434f44bcc44fbfbe0a.pdf",
     "static/media/piano2.jpg": "/portfolio/static/media/piano2.bbcfefa0dde74bed0671.jpg",
     "static/media/restourant.png": "/portfolio/static/media/restourant.002c63398b9c76947bb4.png",
     "static/media/posterPrint.png": "/portfolio/static/media/posterPrint.621ec5c5a0bbe05b92b6.png",
     "static/media/piano1.jpg": "/portfolio/static/media/piano1.5f62a539c19bde8e1826.jpg",
+    "static/media/magistr_compressed_pdf.pdf": "/portfolio/static/media/magistr_compressed_pdf.334cb6a76d20cf0394d1.pdf",
     "static/media/piano5.jpg": "/portfolio/static/media/piano5.d116c70c5ff3166052b6.jpg",
     "static/media/piano4.jpg": "/portfolio/static/media/piano4.dd42c6215e164eb67872.jpg",
+    "static/media/bewertung_magistr.pdf": "/portfolio/static/media/bewertung_magistr.0d2032ee6c47901c741b.pdf",
     "static/media/DancingScript-VariableFont_wght.ttf": "/portfolio/static/media/DancingScript-VariableFont_wght.d02a1ee17643667e9808.ttf",
     "index.html": "/portfolio/index.html",
     "main.1bb8fae2.css.map": "/portfolio/static/css/main.1bb8fae2.css.map",
-    "main.99e70bb8.js.map": "/portfolio/static/js/main.99e70bb8.js.map"
+    "main.73dc2081.js.map": "/portfolio/static/js/main.73dc2081.js.map"
   },
   "entrypoints": [
     "static/css/main.1bb8fae2.css",
-    "static/js/main.99e70bb8.js"
+    "static/js/main.73dc2081.js"
   ]
 }
