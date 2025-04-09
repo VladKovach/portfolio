@@ -14,12 +14,12 @@ html {
   overflow-x: hidden;
   background: linear-gradient(
     135deg,
-    #6a85b6,
-    /* Soft blue */ #bac8e0,
-    /* Light gray-blue */ #eef2f3,
-    /* Almost white, for a gentle gradient */ #ffe0e0,
-    /* Soft pink */ #d4a5a5 /* Muted blush tone */
-  ); /* Balanced and elegant gradient */
+    #2c3e50,
+    #4b6584,
+    #636e72,
+    #95a5a6,
+    #bdc3c7
+  );
   color: #fff; /* Keeps the text white */
   -ms-overflow-style: none; /* IE и Edge */
   -webkit-overflow-scrolling: touch; /* iOS */

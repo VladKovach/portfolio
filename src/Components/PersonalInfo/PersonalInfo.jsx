@@ -40,7 +40,8 @@ const PersonalInfo = () => {
                   an improved user experience.
                 </li>
                 <li>
-                  Integrated third-party APIs such as{" "}
+                  Integrated third-party APIs
+                  {/* such as{" "}
                   <a
                     href="https://www.liqpay.ua/doc"
                     className={classes.link}
@@ -57,7 +58,7 @@ const PersonalInfo = () => {
                     rel="noreferrer"
                   >
                     Delivery
-                  </a>
+                  </a> */}
                   .
                 </li>
                 <li>Worked closely with backend developers to ensure seamless data integration.</li>
@@ -101,7 +102,7 @@ const PersonalInfo = () => {
                   >
                     Element+
                   </a>
-                  . Implemented and heavily customized{" "}
+                  {/* . Implemented and heavily customized{" "}
                   <a
                     href="https://vcalendar.io/"
                     className={classes.link}
@@ -109,7 +110,7 @@ const PersonalInfo = () => {
                     rel="noreferrer"
                   >
                     VCalendar
-                  </a>
+                  </a> */}
                   .
                 </li>
                 <li>Collaborated with teams across different time zones.</li>
@@ -118,10 +119,9 @@ const PersonalInfo = () => {
           </ul>
 
           <p>
-            <strong>Stack:</strong> HTML, CSS, JS, TypeScript, Sass, CSS-in-JS, Styled Components,
-            JQuery, GraphQL, React, Redux, RTK, NextJS, Angular, Vue, CI/CD, PWAs, Website
-            Performance Auditing & Optimization (DevTools, Lighthouse), Jest, Vitest,  Git, GitHub, REST,
-            JIRA, UI & UX, Docker(basic).
+            <strong>Stack:</strong> HTML, CSS, JS, TypeScript, Sass, CSS-in-JS, Tailwind, GraphQL, React, Redux, RTK, NextJS, Angular, Vue, CI/CD, Website Performance
+            Auditing & Optimization (DevTools, Lighthouse), Jest, Vitest, Git, GitHub, REST, JIRA,
+            UI & UX, Docker(basic), Figma, Postman.
           </p>
           <p>
             <strong>Education:</strong>
@@ -167,10 +167,7 @@ const PersonalInfo = () => {
             <li>English: B2-C1</li>
             <li>
               German:{" "}
-              <a href={b2zertifikat} 
-              className={classes.link} 
-              target="_blank" 
-              rel="noreferrer">
+              <a href={b2zertifikat} className={classes.link} target="_blank" rel="noreferrer">
                 B2
               </a>
               -C1

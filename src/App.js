@@ -15,18 +15,15 @@ export default function App() {
       <p className="works_title">HERE IS SOME OF MY WORKS :</p>
       <PosterPrint />
       <PlantShop />
-      <Restourant />
+      {/* <Restourant />
       <CardGalery />
       <p className="works_title">Let's have some fun and play games)))</p>
 
       <TicTack />
-      <Aimgame/>
+      <Aimgame/> */}
      
       <p className="about_this_page_text">
-        This portfolio showcases a selection of my projects, reflecting both my past experiences and
-        ongoing growth as a developer. While this is not an exhaustive list of all my work, I am
-        continuously adding new projects. It represents my history and, at the same time, serves as
-        my portfolio for job opportunities.
+        {/* Of course it is not all... */}
       </p> 
     </div> 
   );
