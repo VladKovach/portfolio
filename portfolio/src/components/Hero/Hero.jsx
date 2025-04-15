@@ -1,24 +1,16 @@
 import { GetSvg } from "../GetSvg";
 import styles from "./hero.module.css";
-import html from "../../assets/svg/html.svg";
-import css from "../../assets/svg/css.svg";
-import js from "../../assets/svg/js.svg";
-import react from "../../assets/svg/react.svg";
-import next from "../../assets/svg/next.svg";
-import vue from "../../assets/svg/vue.svg";
-import angular from "../../assets/svg/angular.svg";
-import vite from "../../assets/svg/vite.svg";
-import git from "../../assets/svg/git.svg";
+
 const cubes = [
-  { id: "cube-1", svg: "html" },
-  { id: "cube-2", svg: "css" },
-  { id: "cube-3", svg: "js" },
-  { id: "cube-4", svg: "react" },
-  { id: "cube-5", svg: "next" },
-  { id: "cube-6", svg: "vue" },
-  { id: "cube-7", svg: "angular" },
-  { id: "cube-8", svg: "vite" },
-  { id: "cube-9", svg: "git" },
+  { id: "cube-1", svg: "html", svg2: "css" },
+  { id: "cube-2", svg: "js", svg2: "ts" },
+  { id: "cube-3", svg: "react", svg2: "nextjs" },
+  { id: "cube-4", svg: "redux", svg2: "mobx" },
+  { id: "cube-5", svg: "git", svg2: "github" },
+  { id: "cube-6", svg: "angular", svg2: "vue" },
+  { id: "cube-7", svg: "npm", svg2: "es6" },
+  { id: "cube-8", svg: "vite", svg2: "webpack" },
+  { id: "cube-9", svg: "rest", svg2: "jest" },
 ];
 const Hero = () => {
   return (
@@ -28,7 +20,7 @@ const Hero = () => {
         <p className="text-lg text-gray-400 mt-4">I am a frontend developer.</p>
         <a
           href="#projects"
-          className="mt-6 px-4 py-2 w-[140px] bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-300"
+          className="mt-6 px-4 py-2 w-[140px] text-white  shadow-btn  rounded hover:shadow-btnhover  transition duration-300"
         >
           View Projects
         </a>
@@ -36,12 +28,17 @@ const Hero = () => {
       <div className={`grid grid-cols-3 gap-0.5 content-center ${styles.scene}`}>
         {cubes.map((cube) => (
           <div key={cube.id} className={styles.cube}>
-            <div className={`${styles.face} ${styles.face_front}`}>
-              <img src={cube.svg} />
+            <div
+              className={`${styles.face} ${styles.face_front} inline-flex items-center justify-center`}
+            >
+              {/* <img width={40} height={40} className="rounded " src={cube.svg} /> */}
+              <GetSvg svg={cube.svg} />
             </div>
             <div className={`${styles.face} ${styles.face_back}`}></div>
-            <div className={`${styles.face} ${styles.face_right}`}>
-            <img src={cube.svg2} />
+            <div
+              className={`${styles.face} ${styles.face_right} inline-flex items-center justify-center`}
+            >
+              <GetSvg svg={cube.svg2} />
             </div>
             <div className={`${styles.face} ${styles.face_left}`}></div>
             <div className={`${styles.face} ${styles.face_top}`}></div>

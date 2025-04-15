@@ -3,11 +3,17 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-backgroundDark: #212A31;
-  --color-grayDark: #2E3944;
-  --color-customBlue: #124E66;
-  --color-textLight: #D3D9D4;
-  --color-grayLight: #748D92;
+  --color-backgroundDark: #212a31;
+  --color-grayDark: #2e3944;
+  --color-customBlue: #124e66;
+  --color-textLight: #d3d9d4;
+  --color-grayLight: #748d92;
+  --color-customOrange: #e9a441;
+ 
+  --shadow-btnhover: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  --shadow-btn: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+ 
 }
 *,
 ::before,
@@ -83,7 +89,7 @@ body {
   line-height: 1.5;
   overflow-x: hidden;
   width: 100%;
-  background-color: #212A31;
+  background-color: #212a31;
 }
 
 a:where([class]) {
@@ -93,10 +99,6 @@ a:where([class]) {
 button,
 label {
   cursor: pointer;
-}
-
-:where([fill]:not([fill="none"], [fill^="url"])) {
-  fill: currentColor;
 }
 
 :where([stroke]:not([stroke="none"], [stroke^="url"])) {
