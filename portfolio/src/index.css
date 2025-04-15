@@ -9,11 +9,11 @@
   --color-textLight: #d3d9d4;
   --color-grayLight: #748d92;
   --color-customOrange: #e9a441;
- 
-  --shadow-btnhover: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+
+  --shadow-btnhover: rgb(0, 0, 0, 0.4) -3px -3px 6px 1px;
   --shadow-btn: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
     rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
- 
+  --shadow-card: rgba(255, 255, 255, 0.24) 0px 2px 8px;
 }
 *,
 ::before,
@@ -90,6 +90,7 @@ body {
   overflow-x: hidden;
   width: 100%;
   background-color: #212a31;
+  color: #d3d9d4;
 }
 
 a:where([class]) {

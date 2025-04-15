@@ -1,0 +1,26 @@
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.container::after {
+  content: "";
+  position: absolute;
+  inset: 1rem 0rem -0.3rem 4rem;
+  background: inherit;
+  top: 0;
+  left: 0;
+  border-radius: inherit;
+  z-index: -10;
+  opacity: 0.85;
+  filter: blur(0.75rem);
+  animation: float-shadow 5s infinite alternate ease-in-out ;
+}
+
+@keyframes float-shadow {
+  100% {
+    scale: 1.03;
+    translate: 0 0.5em;
+    opacity: 0.5;
+  }
+}

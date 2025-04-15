@@ -1,4 +1,5 @@
 import { GetSvg } from "../GetSvg";
+import ScaleAnimatedElement from "../ui/ScaleAnimatedElement";
 import styles from "./hero.module.css";
 
 const cubes = [
@@ -16,14 +17,20 @@ const Hero = () => {
   return (
     <div className="h-1/2 w-full flex justify-around p-5 mt-15">
       <div className="flex flex-col  h-full w-2/5">
-        <h2 className="text-xl font-bold text-white">Hi! My name is Vlad Kovachuk</h2>
-        <p className="text-lg text-gray-400 mt-4">I am a frontend developer.</p>
+        <h2 className="text-2xl font-bold text-textLight ">
+          <span className="text-customOrange text-3xl">Let’s</span> Build What You Imagine.
+          <span className="inline-flex" >
+            <GetSvg svg="idea" />
+          </span>
+        </h2>
+        <p className="text-lg text-textLight mt-4 font-bold">I am a frontend developer.</p>
         <a
           href="#projects"
-          className="mt-6 px-4 py-2 w-[140px] text-white  shadow-btn  rounded hover:shadow-btnhover  transition duration-300"
+          className={`${styles.shadowBtn} mt-6 px-4 py-2 w-[140px] text-white  rounded shadow-btn hover:shadow-btnhover transition-all duration-300 `}
         >
           View Projects
         </a>
+        {/* <ScaleAnimatedElement text={"View Projects"} /> */}
       </div>
       <div className={`grid grid-cols-3 gap-0.5 content-center ${styles.scene}`}>
         {cubes.map((cube) => (
