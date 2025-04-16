@@ -1,5 +1,4 @@
 import SkillItem from "./ui/SkillItem";
-const s = ['w', 'f']
 const About = () => {
   return (
     <div className="mt-10 ml-10">

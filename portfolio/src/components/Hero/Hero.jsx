@@ -13,7 +13,7 @@ const cubes = [
   { id: "cube-8", svg: "vite", svg2: "webpack" },
   { id: "cube-9", svg: "rest", svg2: "jest" },
 ];
-const heroIdeas = ["Imagine", "Plan", "Desire", "Want", 'Think'];
+const heroIdeas = ["Imagine", "Plan", "Desire", "Want", "Think"];
 const Hero = () => {
   return (
     <div className="h-1/2 w-full flex justify-around p-5 mt-15">
@@ -21,17 +21,16 @@ const Hero = () => {
         <h1 className="text-2xl font-bold text-textLight ">
           <span className="text-customOrange text-3xl">Let’s</span> Build What You{" "}
           <div className={styles.slider}>
-            <span className={styles.container}>
+            <div className={styles.container}>
               {heroIdeas.map((word) => (
-                <p key={word} className="flex items-center  pb-2">
-                 
-                  <span>{word}</span>
+                <p key={word} className="flex items-center min-w-[135px] pb-2">
+                  <span className="">{word}</span>
                   <span className="rounded-full  p-2">
                     <GetSvg svg={word} />
                   </span>
                 </p>
               ))}
-            </span>
+            </div>
             {/* Imagine&nbsp; <GetSvg svg="idea" /> */}
           </div>
         </h1>
