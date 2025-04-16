@@ -1,10 +1,12 @@
+import { AnimatedBorder } from "./ui/AnimatedBorder/AnimatedBorder";
 import SkillItem from "./ui/SkillItem";
 const About = () => {
   return (
-    <div className="mt-10 ml-10">
+    <div className="mt-10  ">
       <div className="">
         <h2 className="font-bold text-textLight text-xl">Stack:</h2>
-        <div className="w-5/6 flex mt-2 flex-wrap shadow-card rounded p-3">
+        {/* <div className="w-5/6 flex mt-2 flex-wrap shadow-card rounded p-3"> */}
+        <AnimatedBorder>
           <SkillItem name="HTML" />
           <SkillItem name="Css" />
           <SkillItem name="JS" />
@@ -31,11 +33,12 @@ const About = () => {
           <SkillItem name="Docker" />
           <SkillItem name="Figma" />
           <SkillItem name="Postman" />
-        </div>
+          {/* </div> */}
+        </AnimatedBorder>
       </div>
       <div className=" mt-5 ">
         <h2 className="font-bold text-xl">What I can:</h2>
-        <div className="w-5/6 mt-2 shadow-card rounded p-3 flex flex-col">
+        <AnimatedBorder classNames='flex flex-col'>
           <SkillItem name="Write clean, scalable code" />
           <SkillItem name="Implement diverse functionalities" />
           <SkillItem name="Create smooth, optimized responsive layouts" />
@@ -46,16 +49,16 @@ const About = () => {
           <SkillItem name="Collaborate effectively within a team or thrive independently on the frontend" />
           <SkillItem name="Channel passion into every project—crafting innovative, user-centric experiences" />
           <SkillItem name="Continuously learn and innovate to keep up with the evolving web" />
-        </div>
+        </AnimatedBorder> 
       </div>
       <div className=" mt-5 ">
         <h2 className="font-bold text-xl">Languages:</h2>
-        <div className="w-5/6 mt-2 shadow-card rounded p-3 flex flex-col">
+        <AnimatedBorder>
           <SkillItem name="English: B2" />
           <SkillItem name="German: B2" />
           <SkillItem name="Ukrainian: native" />
           <SkillItem name="Russian: C1" />
-        </div>
+        </AnimatedBorder>
       </div>
     </div>
   );

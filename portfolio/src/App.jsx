@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="max-w-screen-xl mx-auto h-full">
       <Header />
-      <main >
+      <main  className="max-w-[1200px] ml-auto mr-auto">
         <Hero />
         <About />
         <Projects />

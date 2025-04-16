@@ -13,7 +13,7 @@ const cubes = [
   { id: "cube-8", svg: "vite", svg2: "webpack" },
   { id: "cube-9", svg: "rest", svg2: "jest" },
 ];
-const heroIdeas = ["Imagine", "Plan", "Desire", "Want", "Think"];
+const heroIdeas = ["Imagine", "Plan", "Desire", "Think"];
 const Hero = () => {
   return (
     <div className="h-1/2 w-full flex justify-around p-5 mt-15">
