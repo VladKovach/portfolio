@@ -3,7 +3,7 @@ import { GetSvg } from "../GetSvg";
 import styles from "./header.module.css";
 export const Header = () => {
   return (
-    <header className=" text-white p-4 w-full flex justify-between items-center">
+    <header className={`${styles.header} text-white p-4 w-full flex justify-between items-center`}>
       <button className="">
         <GetSvg svg="brain" />
       </button>

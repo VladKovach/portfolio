@@ -1,4 +1,31 @@
-/* Scene container: sets perspective */
+.slider {
+  flex-direction: column;
+  transition: all cubic-bezier(0.71, 0.03, 0.34, 1);
+  width: 130px;
+  overflow-x: hidden;
+}
+.container{
+  display: flex;
+  animation: slider 10s infinite cubic-bezier(0.9 0.01, 0.3, 0.9);
+}
+@keyframes slider {
+  0%{
+    transform: translateY((1%));
+  }
+  20%{
+    transform: translateY((21%));
+  }
+  40%{
+    transform: translateY((41%));
+  }
+  60%{
+    transform: translateY((61%));
+  }
+  80%{
+    transform: translateY((81%));
+  }
+  
+}
 .scene {
   perspective: 800px;
   transform: rotateY(-30deg);

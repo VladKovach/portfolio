@@ -1,5 +1,5 @@
 import SkillItem from "./ui/SkillItem";
-
+const s = ['w', 'f']
 const About = () => {
   return (
     <div className="mt-10 ml-10">
@@ -17,6 +17,9 @@ const About = () => {
           <SkillItem name="NextJs" />
           <SkillItem name="Angular" />
           <SkillItem name="Vue" />
+          <SkillItem name="Vite" />
+          <SkillItem name="Webpack" />
+
           <SkillItem name="CI/CD" />
           <SkillItem name="Website Perfomance" />
           <SkillItem name="Jest" />
@@ -32,16 +35,27 @@ const About = () => {
         </div>
       </div>
       <div className=" mt-5 ">
-        <h2 className="font-bold text-xl">What i can:</h2>
-        <div className="w-5/6  mt-2  shadow-card rounded p-3">
-          <p className="">qwdqwd</p>
-          <p>qwdqwd</p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
+        <h2 className="font-bold text-xl">What I can:</h2>
+        <div className="w-5/6 mt-2 shadow-card rounded p-3 flex flex-col">
+          <SkillItem name="Write clean, scalable code" />
+          <SkillItem name="Implement diverse functionalities" />
+          <SkillItem name="Create smooth, optimized responsive layouts" />
+          <SkillItem name="Optimize site speed in line with Core Web Vitals" />
+          <SkillItem name="Integrate various APIs and turn design-ready concepts into reality" />
+          <SkillItem name="Develop elegant dark modes—from simple toggles to fully animated, custom themes" />
+          <SkillItem name="Work seamlessly with React, Vue, Angular, or framework-less solutions" />
+          <SkillItem name="Collaborate effectively within a team or thrive independently on the frontend" />
+          <SkillItem name="Channel passion into every project—crafting innovative, user-centric experiences" />
+          <SkillItem name="Continuously learn and innovate to keep up with the evolving web" />
+        </div>
+      </div>
+      <div className=" mt-5 ">
+        <h2 className="font-bold text-xl">Languages:</h2>
+        <div className="w-5/6 mt-2 shadow-card rounded p-3 flex flex-col">
+          <SkillItem name="English: B2" />
+          <SkillItem name="German: B2" />
+          <SkillItem name="Ukrainian: native" />
+          <SkillItem name="Russian: C1" />
         </div>
       </div>
     </div>
