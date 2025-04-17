@@ -2,11 +2,11 @@ import { AnimatedBorder } from "./ui/AnimatedBorder/AnimatedBorder";
 import SkillItem from "./ui/SkillItem";
 const About = () => {
   return (
-    <div className="mt-10  ">
+    <div className="mt-10  ml-18">
       <div className="">
         <h2 className="font-bold text-textLight text-xl">Stack:</h2>
         {/* <div className="w-5/6 flex mt-2 flex-wrap shadow-card rounded p-3"> */}
-        <AnimatedBorder>
+        <AnimatedBorder index={0}>
           <SkillItem name="HTML" />
           <SkillItem name="Css" />
           <SkillItem name="JS" />
@@ -20,7 +20,6 @@ const About = () => {
           <SkillItem name="Vue" />
           <SkillItem name="Vite" />
           <SkillItem name="Webpack" />
-
           <SkillItem name="CI/CD" />
           <SkillItem name="Website Perfomance" />
           <SkillItem name="Jest" />
@@ -38,7 +37,7 @@ const About = () => {
       </div>
       <div className=" mt-5 ">
         <h2 className="font-bold text-xl">What I can:</h2>
-        <AnimatedBorder classNames='flex flex-col'>
+        <AnimatedBorder classNames="flex flex-col" index={1}>
           <SkillItem name="Write clean, scalable code" />
           <SkillItem name="Implement diverse functionalities" />
           <SkillItem name="Create smooth, optimized responsive layouts" />
@@ -49,11 +48,11 @@ const About = () => {
           <SkillItem name="Collaborate effectively within a team or thrive independently on the frontend" />
           <SkillItem name="Channel passion into every project—crafting innovative, user-centric experiences" />
           <SkillItem name="Continuously learn and innovate to keep up with the evolving web" />
-        </AnimatedBorder> 
+        </AnimatedBorder>
       </div>
       <div className=" mt-5 ">
         <h2 className="font-bold text-xl">Languages:</h2>
-        <AnimatedBorder>
+        <AnimatedBorder index={2} classNames="flex flex-col">
           <SkillItem name="English: B2" />
           <SkillItem name="German: B2" />
           <SkillItem name="Ukrainian: native" />

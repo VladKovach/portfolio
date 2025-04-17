@@ -1,25 +1,32 @@
 import { useRef, useState } from "react";
 import styles from "./animatedBorder.module.css";
-export const AnimatedBorder = ({ classNames }) => {
-  const containerRef = useRef();
-  const [coords, setCoords] = useState({ x: 0, y: 0 });
+export const AnimatedBorder = ({ classNames, children, index }) => {
+  const containerRef = useRef([]);
 
-  const handleMouseMove = (e) => {
-    const rect = containerRef.current?.getBoundingClientRect();
-    if (rect) {
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      setCoords({ x, y });
-    }
+  const handleMouseMove = (index) => (e) => {
+    const container = containerRef.current[index];
+    if (!container) return;
+    const rect = container.getBoundingClientRect();
+
+    const mouseX = e.clientX - rect.left - rect.width / 2;
+    const mouseY = e.clientY - rect.top - rect.height / 2;
+
+    let angle = Math.atan2(mouseY, mouseX) * (180 / Math.PI);
+
+    angle = (angle + 360) % 360;
+
+    container.style.setProperty("--start", angle + 60);
   };
 
   return (
     <div
-      ref={containerRef}
-      onMouseMove={handleMouseMove} 
-      className={`${styles.animatedBorder} w-5/6 flex mt-2 flex-wrap shadow-card rounded p-3 ${classNames}`}
-      style={{ "--x": `${coords.x}px`, "--y": `${coords.y}px` }}
+      ref={(el) => (containerRef.current[index] = el)}
+      onMouseMove={handleMouseMove(index)}
+      className={`${styles.animatedBorder} ${styles.card} ${classNames} timeline-card w-5/6 flex mt-2 flex-wrap shadow-card rounded p-3 `}
+      // style={{ "--x": `${coords.x}px`, "--y": `${coords.y}px` }}
     >
+      <div className={styles.glow}></div>
+      {children}
     </div>
   );
 };
