@@ -2,7 +2,7 @@ import { AnimatedBorder } from "./ui/AnimatedBorder/AnimatedBorder";
 import SkillItem from "./ui/SkillItem";
 const About = () => {
   return (
-    <div className="mt-10  ml-18">
+    <div className="mt-10 ">
       <div className="">
         <h2 className="font-bold text-textLight text-xl">Stack:</h2>
         {/* <div className="w-5/6 flex mt-2 flex-wrap shadow-card rounded p-3"> */}
@@ -43,7 +43,7 @@ const About = () => {
           <SkillItem name="Create smooth, optimized responsive layouts" />
           <SkillItem name="Optimize site speed in line with Core Web Vitals" />
           <SkillItem name="Integrate various APIs and turn design-ready concepts into reality" />
-          <SkillItem name="Develop elegant dark modes—from simple toggles to fully animated, custom themes" />
+          <SkillItem name="Develaop elegant dark modes—from simple toggles to fully animated, custom themes" />
           <SkillItem name="Work seamlessly with React, Vue, Angular, or framework-less solutions" />
           <SkillItem name="Collaborate effectively within a team or thrive independently on the frontend" />
           <SkillItem name="Channel passion into every project—crafting innovative, user-centric experiences" />
