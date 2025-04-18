@@ -33,4 +33,4 @@ const Experience = () => {
   );
 };
 
-export default Projects;
+export default Experience;

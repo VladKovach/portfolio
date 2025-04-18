@@ -9,11 +9,12 @@
   --color-textLight: #d3d9d4;
   --color-grayLight: #748d92;
   --color-customOrange: #e9a441;
+  --radius-projectImg: 10% 1%;
 
   --shadow-btnhover: rgb(0, 0, 0, 0.4) -3px -3px 6px 1px;
   --shadow-btn: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
     rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  --shadow-card: rgba(255, 255, 255, 0.24) 0px 2px 8px;
+  --shadow-card: rgba(255, 255, 255, 0.24) 0px 0px 8px;
 }
 *,
 ::before,
@@ -30,9 +31,7 @@ body,
   margin: 0;
 }
 
-:where(h1, h2, h3, h4, h5, h6, p, ul, ol, dl):where([class]) {
-  margin-block: 0;
-}
+
 
 :where(dd[class]) {
   margin-left: 0;
@@ -54,7 +53,7 @@ body,
 
 p {
   --paragraphMarginBottom: 24px;
-  margin-block: 0;
+  /* margin-block: 0; */
 }
 
 p:where(:not([class]):not(:last-child)) {

@@ -7,7 +7,7 @@ import Projects from "./components/Projects";
 
 function App() {
   return (
-    <div className="max-w-screen-xl mx-auto h-full relative">
+    <div className="h-full relative">
       <Header />
       <main className="max-w-[1100px] ml-auto mr-auto">
         <div className="w-5/6 mr-auto ml-auto">

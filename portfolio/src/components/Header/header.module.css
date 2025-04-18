@@ -8,7 +8,7 @@
   animation: scrollheader 0.3s;
   animation-fill-mode: both;
   animation-timeline: scroll();
-  animation-range: 90px 150px;
+  animation-range: 50px 140px;
 }
 @keyframes scrollheader {
   to {
