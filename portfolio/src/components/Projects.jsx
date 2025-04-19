@@ -3,6 +3,7 @@ import { AnimatedBorder } from "./ui/AnimatedBorder/AnimatedBorder";
 import plantShop from "../assets/images/plantShop.png";
 import posterPrint from "../assets/images/posterPrint.png";
 import { GetSvg } from "./GetSvg";
+import SkillLogo from "./ui/SkillLogo/SkillLogo";
 
 const Projects = () => {
   return (
@@ -17,13 +18,17 @@ const Projects = () => {
           >
             <img className="w-60  rounded-projectImg  " src={plantShop} alt="PlantShop"></img>
           </a>
-          <div className="w-3/5">
+          <div className="w-3/5 ml-10 max-mobile:ml-5">
             <div className="font-bold text-2xl inline-flex items-center">
               <span className="mr-2 text-customOrange">Planty</span>
               <GetSvg svg="external" />
             </div>
             <p className="mt-3">Layout for Online Shop. Beauty styled and adaptive for mobile</p>
-            <div className="">{/* svgs */}</div>
+            <div className="mt-5 perspective-near w-full p-1 perspec">
+            <SkillLogo name='react'/>
+
+
+            </div>
           </div>
         </div>
       </AnimatedBorder>

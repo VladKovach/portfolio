@@ -1,0 +1,38 @@
+.container {
+  width: 70px;
+  height: 70px;
+  /* backface-visibility: hidden; */
+  transform-style: preserve-3d;
+  /* animation: rotate 6s linear infinite; */
+  border-radius: 50%;
+  position: relative;
+  transform-origin: center;
+  display: flex;
+  transform: rotateY(90deg);
+  align-items: center;
+  justify-content: center;
+  background: #2e3944;
+}
+
+.sideLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #2e3944;
+  border: 1px solid #2e3944;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
