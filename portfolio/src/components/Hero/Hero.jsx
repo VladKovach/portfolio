@@ -3,15 +3,15 @@ import ScaleAnimatedElement from "../ui/ScaleAnimatedElement";
 import styles from "./hero.module.css";
 
 const cubes = [
-  { id: "cube-1", svg: "html", svg2: "css" },
-  { id: "cube-2", svg: "js", svg2: "ts" },
-  { id: "cube-3", svg: "react", svg2: "nextjs" },
-  { id: "cube-4", svg: "scss", svg2: "redux" },
-  { id: "cube-5", svg: "git", svg2: "github" },
-  { id: "cube-6", svg: "angular", svg2: "vue" },
-  { id: "cube-7", svg: "npm", svg2: "es6" },
-  { id: "cube-8", svg: "vite", svg2: "webpack" },
-  { id: "cube-9", svg: "rest", svg2: "jest" },
+  { id: "cube-1", svg: "Html", svg2: "Css" },
+  { id: "cube-2", svg: "Js", svg2: "Ts" },
+  { id: "cube-3", svg: "React", svg2: "Next.js" },
+  { id: "cube-4", svg: "Scss", svg2: "Redux" },
+  { id: "cube-5", svg: "Git", svg2: "GitHub" },
+  { id: "cube-6", svg: "Angular", svg2: "Vue" },
+  { id: "cube-7", svg: "Npm", svg2: "es6" },
+  { id: "cube-8", svg: "Vite", svg2: "Webpack" },
+  { id: "cube-9", svg: "Rest", svg2: "Jest" },
 ];
 const heroIdeas = ["Imagine", "Plan", "Desire", "Think"];
 const Hero = () => {
