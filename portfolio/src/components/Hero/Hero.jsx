@@ -16,7 +16,7 @@ const cubes = [
 const heroIdeas = ["Imagine", "Plan", "Desire", "Think"];
 const Hero = () => {
   return (
-    <div className=" w-full flex justify-around  p-5 mt-15">
+    <div id="about" className=" w-full flex justify-around  p-5 mt-15 scroll-mt-20">
       <div className="flex flex-col  h-full w-2/5 mr-15">
         <h1 className="text-2xl font-bold text-textLight ">
           <span className="text-customOrange text-3xl">Let’s</span> Build What You{" "}

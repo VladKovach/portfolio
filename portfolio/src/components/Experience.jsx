@@ -1,25 +1,23 @@
 import React from "react";
 import { AnimatedBorder } from "./ui/AnimatedBorder/AnimatedBorder";
-import plantShop from "../assets/images/plantShop.png";
 import posterPrint from "../assets/images/posterPrint.png";
 import { GetSvg } from "./GetSvg";
 
 const Experience = () => {
   return (
-    <div className="flex flex-col mt-10 z-21">
+    <div id="experience" className="flex flex-col mt-10 z-21 scroll-mt-20">
       <h2 className="font-bold text-xl">Experience</h2>
-      <AnimatedBorder>
+      <AnimatedBorder classNames='mb-40'>
         <div className="p-2 flex  w-full justify-between">
-          <a
-            className="duration-300 z-21 shadow ml-2  hover:scale-103"
-            href="https://vladkovach.github.io/plantShop/"
-            target="_blank"
-          >
-            <img className="w-60  rounded-projectImg  " src={plantShop} alt="PlantShop"></img>
-          </a>
-          <div className="w-3/5">
+          <div className=" relative flex flex-col">
+            <span className="font-bold absolute top-[-12px] left-6">01.2023</span>
+            <div className="relative ml-[6px] border-l-[3px] h-50 border-grayLight  before:content-['']  before:absolute before:top-[-5px] before:left-[-7.5px]  before:w-3 before:h-3 before:rounded-full before:bg-grayLight 
+             after:content-['']  after:absolute after:bottom-[-5px] after:left-[-7.5px]  after:w-3 after:h-3 after:rounded-full after:bg-grayLight"></div>
+            <span className="font-bold absolute bottom-[-9px] left-6">01.2022</span>
+          </div>
+          <div className="w-4/5">
             <div className="font-bold text-2xl inline-flex items-center">
-              <span className="mr-2 text-customOrange">Planty</span>
+              <span className="font-bold mr-2 text-customOrange">2event</span>
               <GetSvg svg="external" />
             </div>
             <p className="mt-3">Layout for Online Shop. Beauty styled and adaptive for mobile</p>

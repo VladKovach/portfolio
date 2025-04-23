@@ -95,7 +95,6 @@ label,
 a {
   position: relative;
   cursor: pointer;
-  z-index: 21;
 }
 
 :where([stroke]:not([stroke="none"], [stroke^="url"])) {

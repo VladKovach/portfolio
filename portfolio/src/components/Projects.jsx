@@ -7,7 +7,7 @@ import SkillLogo from "./ui/SkillLogo/SkillLogo";
 
 const Projects = () => {
   return (
-    <div className="flex flex-col mt-10 z-21">
+    <div id="projects" className="flex flex-col mt-10 z-21 scroll-mt-20">
       <h2 className="font-bold text-xl">Projects</h2>
       <AnimatedBorder>
         <div className="p-2 flex max-mobile:flex-col-reverse  w-full justify-between">
@@ -47,19 +47,19 @@ const Projects = () => {
         </div>
       </AnimatedBorder>
       <AnimatedBorder>
-        <div className="p-2 flex  w-full justify-between">
+        <div className="p-2 flex max-mobile:flex-col-reverse  w-full justify-between">
           <a
-            className="duration-300 z-21 shadow ml-2  hover:scale-103"
+            className="duration-300  shadow ml-2  hover:scale-103 max-mobile:flex max-mobile:justify-center max-mobile:mt-5"
             href="https://posterprint.com.ua"
             target="_blank"
           >
             <img
-              className="w-130 h-60  rounded-projectImg  "
+              className="max-w-90 max-h-130 max-mobile:max-h-100 rounded-projectImg  "
               src={posterPrint}
               alt="posterPrint"
             ></img>
           </a>
-          <div className="w-3/5 ml-10 max-mobile:ml-5">
+          <div className="w-3/5 ml-10 max-mobile:ml-0 max-mobile:w-full">
             <a
               className="font-bold text-2xl inline-flex items-center"
               href="https://posterprint.com.ua"
