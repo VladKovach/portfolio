@@ -7,7 +7,7 @@ import SkillLogo from "./ui/SkillLogo/SkillLogo";
 
 const Projects = () => {
   return (
-    <div id="projects" className="flex flex-col mt-10 z-21 scroll-mt-20">
+    <div  className="flex flex-col mt-10 z-21 scroll-mt-20">
       <h2 className="font-bold text-xl">Projects</h2>
       <AnimatedBorder>
         <div className="p-2 flex max-mobile:flex-col-reverse  w-full justify-between">

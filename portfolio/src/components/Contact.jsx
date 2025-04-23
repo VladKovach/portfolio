@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div id='contact scroll-mt-20'>Contact</div>
+    <div className='scroll-mt-20'>Contact</div>
   )
 }
 
