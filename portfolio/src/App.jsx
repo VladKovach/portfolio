@@ -1,6 +1,6 @@
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
-import Experience from "./components/Experience";
+import Experience from "./components/Experience/Experience";
 import { Header } from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Projects from "./components/Projects";
@@ -11,7 +11,7 @@ function App() {
     <div className="h-full relative">
       <Header />
       <SideNav /> {/* ← our new scroll-spy nav */}
-      <div className="flex-1 ml-24">
+      <div className="flex-1 ml-24 mr-4">
         
         {/* leave room for the sidebar */}
         <main className="max-w-[1100px] mx-auto">

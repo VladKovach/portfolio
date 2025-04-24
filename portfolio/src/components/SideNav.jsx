@@ -55,8 +55,8 @@ export default function SideNav() {
                 <a
                   href={`#${sec.id}`}
                   className={`
-                    block w-5 h-5
-                    ${isActive ? "bg-textLight rotate-135" : "bg-grayDark"}
+                    block w-5 h-5 max-sm:w-4 max-sm:h-4
+                    ${isActive ? "bg-textLight rotate-135 scale-110" : "bg-grayDark"}
                      border-grayDark
                     transition-all duration-1000
                   `}
