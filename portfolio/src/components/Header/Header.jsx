@@ -9,24 +9,43 @@ export const Header = () => {
 
   const navLinks = (
     <>
-      <a href="#about" onClick={() => setIsMenuOpen(false)} className="nav-link">
+      <a
+        href="#about"
+        onClick={() => setIsMenuOpen(false)}
+        className="nav-link  hover:text-white transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:scale-x-0 after:origin-left after:bg-wtext-white after:shadow-[0_0_8px_orange] after:transition-transform after:duration-300 hover:after:scale-x-100"
+      >
         About
       </a>
-      <a href="#skills" onClick={() => setIsMenuOpen(false)} className="nav-link">
+      <a
+        href="#skills"
+        onClick={() => setIsMenuOpen(false)}
+        className="nav-link  hover:text-white transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:scale-x-0 after:origin-left after:bg-wtext-white after:shadow-[0_0_8px_orange] after:transition-transform after:duration-300 hover:after:scale-x-100"
+      >
         Skills
       </a>
-      <a href="#projects" onClick={() => setIsMenuOpen(false)} className="nav-link">
+      <a
+        href="#projects"
+        onClick={() => setIsMenuOpen(false)}
+        className="nav-link  hover:text-white transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:scale-x-0 after:origin-left after:bg-wtext-white after:shadow-[0_0_8px_orange] after:transition-transform after:duration-300 hover:after:scale-x-100"
+      >
         Projects
       </a>
-      <a href="#experience" onClick={() => setIsMenuOpen(false)} className="nav-link">
+      <a
+        href="#experience"
+        onClick={() => setIsMenuOpen(false)}
+        className="nav-link  hover:text-white transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:scale-x-0 after:origin-left after:bg-wtext-white after:shadow-[0_0_8px_orange] after:transition-transform after:duration-300 hover:after:scale-x-100"
+      >
         Experience
       </a>
-      <a href="#contact" onClick={() => setIsMenuOpen(false)} className="nav-link">
+      <a
+        href="#contact"
+        onClick={() => setIsMenuOpen(false)}
+        className="nav-link  hover:text-white transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-[3px] after:w-full after:scale-x-0 after:origin-left after:bg-wtext-white after:shadow-[0_0_8px_orange] after:transition-transform after:duration-300 hover:after:scale-x-100"
+      >
         Contact
       </a>
     </>
   );
-
   return (
     <header className={`${styles.header} text-white p-4 w-full flex justify-between items-center`}>
       <button className="">

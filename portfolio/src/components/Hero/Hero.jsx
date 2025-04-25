@@ -8,7 +8,7 @@ const cubes = [
   { id: "cube-3", svg: "React", svg2: "Next.js" },
   { id: "cube-4", svg: "Scss", svg2: "Redux" },
   { id: "cube-5", svg: "Git", svg2: "GitHub" },
-  { id: "cube-6", svg: "Angular", svg2: "Vue" },
+  { id: "cube-6", svg: "Angular", svg2: "Vue.js" },
   { id: "cube-7", svg: "Npm", svg2: "es6" },
   { id: "cube-8", svg: "Vite", svg2: "Webpack" },
   { id: "cube-9", svg: "Rest", svg2: "Jest" },
@@ -40,7 +40,7 @@ const Hero = () => {
         </p>
         <a
           href="#projects"
-          className={`${styles.shadowBtn} mt-6 px-4 py-2 font-bold w-[140px] text-white  rounded shadow-btn hover:shadow-btnhover transition-all duration-300 `}
+          className={`${styles.shadowBtn} mt-6 px-4 py-2 font-bold w-[140px] text-white  rounded shadow-btn hover:shadow-btnhover hover:scale-98  duration-100 `}
         >
           View Projects
         </a>

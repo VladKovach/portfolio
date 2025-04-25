@@ -17,7 +17,7 @@ const Skills = () => {
           <SkillItem name="Redux" />
           <SkillItem name="NextJs" />
           <SkillItem name="Angular" />
-          <SkillItem name="Vue" />
+          <SkillItem name="Vue.js" />
           <SkillItem name="Vite" />
           <SkillItem name="Webpack" />
           <SkillItem name="CI/CD" />
@@ -44,7 +44,7 @@ const Skills = () => {
           <SkillItem name="Optimize site speed in line with Core Web Vitals" />
           <SkillItem name="Integrate various APIs and turn design-ready concepts into reality" />
           <SkillItem name="Develaop elegant dark modes—from simple toggles to fully animated, custom themes" />
-          <SkillItem name="Work seamlessly with React, Vue, Angular, or framework-less solutions" />
+          <SkillItem name="Work seamlessly with React, Vue.js, Angular, or framework-less solutions" />
           <SkillItem name="Collaborate effectively within a team or thrive independently on the frontend" />
           <SkillItem name="Channel passion into every project—crafting innovative, user-centric experiences" />
           <SkillItem name="Continuously learn and innovate to keep up with the evolving web" />

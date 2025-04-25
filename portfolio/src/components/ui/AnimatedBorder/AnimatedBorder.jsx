@@ -22,7 +22,7 @@ export const AnimatedBorder = ({ classNames, children, index }) => {
     <div
       ref={(el) => (containerRef.current[index] = el)}
       onMouseMove={handleMouseMove(index)}
-      className={`${styles.animatedBorder} ${styles.card} ${classNames} timeline-card w-full flex mt-2 flex-wrap shadow-card rounded-xl p-3 `}
+      className={`${styles.animatedBorder} ${styles.card} ${classNames} mb-8 timeline-card w-full flex mt-2 flex-wrap shadow-card rounded-xl p-3 `}
       // style={{ "--x": `${coords.x}px`, "--y": `${coords.y}px` }}
     >
       <div className={styles.glow}></div>
