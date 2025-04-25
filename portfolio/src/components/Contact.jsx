@@ -27,6 +27,8 @@ const Contact = () => {
   };
 
   const handleChange = (e) => {
+    console.log('errors = ', errors);
+    
     const { name, value } = e.target;
     setValues((v) => ({ ...v, [name]: value }));
     if (touched[name]) {
@@ -62,9 +64,7 @@ const Contact = () => {
       <AnimatedBorder>
         <div className="max-w-xl mx-auto p-6  ">
           <p className="mb-6 font-bold text-center">
-            Have a question or a proposal? <span className="inline-block">😊</span>
-            <br className="sm:hidden" />
-            Feel free to reach out!
+            Have a question or a proposal? Feel free to reach out!😊
           </p>
           <form
             onSubmit={handleSubmit}
@@ -81,9 +81,9 @@ const Contact = () => {
                 <span className="block text-sm font-medium ">{label}</span>
                 <input
                   className={`
-                mt-1 block w-full px-4 py-2 border rounded-lg
-                focus:outline-none 
-                ${errors[name] ? "border-customOrange" : "border-textLight"}
+                mt-1 block w-full bg-grayDark px-4 py-2 transition-colors duration-150 rounded-lg
+                focus:bg-backgroundDark focus:shadow focus:shadow-textLight focus:outline-none 
+                ${errors[name] && " border border-customOrange" }
               `}
                   type={type}
                   name={name}
@@ -97,14 +97,14 @@ const Contact = () => {
               </label>
             ))}
 
-            <label className="block">
-              <span className="block text-sm font-medium ">Your Message</span>
+            <div className="block">
+              <label className="block text-sm font-medium ">Your Message</label>
               <textarea
                 className={`
-              mt-1 block w-full px-4 py-2 border rounded-lg resize-none h-32
-              focus:outline-none focus:ring-2 focus:ring-orange-400
-              ${errors.message ? "border-customOrange" : "border-textLight"}
-            `}
+              mt-1 block w-full px-4 py-2 bg-grayDark transition-all duration-300 relative rounded-lg resize-none h-32
+              focus:bg-backgroundDark focus:shadow focus:shadow-textLight focus:outline-none 
+                ${errors.message && " border border-customOrange" }
+              `}
                 name="message"
                 placeholder="Type your message here..."
                 value={values.message}
@@ -113,7 +113,7 @@ const Contact = () => {
                 required
               />
               {errors.message && <p className="mt-1 text-customOrange text-sm">{errors.message}</p>}
-            </label>
+            </div>
 
             <button
               type="submit"

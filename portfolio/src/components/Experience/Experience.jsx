@@ -21,8 +21,8 @@ const Experience = () => {
           {/* <div className='shadow-md shadow-textLight w-1/2 font-bold text-xl text-textLight flex items-center'><p className="p-4">01.2022</p>-&nbsp<p>01.2023</p></div> */}
 
           <div className="">
-            <div className="flex items-end ">
-              <div className="">
+            <div className="flex items-end max-sm:flex-col max-sm:items-center">
+              <div className=" max-sm:w-full max-sm:flex max-sm:justify-between">
                 <a
                   className="font-bold text-2xl inline-flex items-center"
                   href="https://vladkovach.github.io/plantShop/"
@@ -31,9 +31,12 @@ const Experience = () => {
                   <span className="font-bold mr-2 text-customOrange">2event</span>
                   <GetSvg svg="external" />
                 </a>
-                <p className="shadow-btn font-bold mt-3 p-1">Frontend Developer</p>
+                <p className="shadow-inset font-bold mt-3 rounded-2xl p-3 ml-2">Frontend Developer</p>
               </div>
-              <div className="w-3/5 ml-10 mb-1 border-b-[3px]"></div>
+              <div className="w-3/5 max-sm:w-full max-sm:mt-5 ml-10 max-sm:ml-0 mb-1 pb-2 flex justify-between border-b-[3px]">
+                <p className="shadow-date rounded-projectImg  p-5 pt-2 pb-2">01.2023</p>
+                <p className="shadow-date rounded-projectImg  p-5 pt-2 pb-2">01.2023</p>
+              </div>
             </div>
             <p className="mt-7">
               Development of the admin page and enhancement of functionality for creating events.
@@ -64,8 +67,8 @@ const Experience = () => {
           {/* <div className='shadow-md shadow-textLight w-1/2 font-bold text-xl text-textLight flex items-center'><p className="p-4">01.2022</p>-&nbsp<p>01.2023</p></div> */}
 
           <div className="">
-            <div className="flex items-end ">
-              <div className="">
+            <div className="flex items-end max-sm:flex-col max-sm:items-center">
+              <div className=" max-sm:w-full max-sm:flex max-sm:justify-between">
                 <a
                   className="font-bold text-2xl inline-flex items-center"
                   href="https://vladkovach.github.io/posterprint/"
@@ -74,9 +77,12 @@ const Experience = () => {
                   <span className="font-bold mr-2 text-customOrange">PosterPrint</span>
                   <GetSvg svg="external" />
                 </a>
-                <p className="shadow-btn font-bold mt-3 p-1">Frontend Developer</p>
+                <p className="shadow-inset font-bold mt-3 rounded-2xl p-3 ml-2">Frontend Developer</p>
               </div>
-              <div className="w-3/5 ml-10 mb-1 border-b-[3px]"></div>
+              <div className="w-3/5 max-sm:w-full max-sm:mt-5 ml-10 max-sm:ml-0 mb-1 pb-2 flex justify-between border-b-[3px]">
+                <p className="shadow-date rounded-projectImg  p-5 pt-2 pb-2">01.2023</p>
+                <p className="shadow-date rounded-projectImg  p-5 pt-2 pb-2">01.2023</p>
+              </div>
             </div>
             <p className="mt-7">Development of an online shop.</p>
             <div className="mt-5 w-full p-1 max-mobile:text-center">
@@ -104,14 +110,17 @@ const Experience = () => {
           {/* <div className='shadow-md shadow-textLight w-1/2 font-bold text-xl text-textLight flex items-center'><p className="p-4">01.2022</p>-&nbsp<p>01.2023</p></div> */}
 
           <div className="">
-            <div className="flex items-end ">
-              <div className="">
+            <div className="flex items-end max-sm:flex-col max-sm:items-center">
+              <div className=" max-sm:w-full max-sm:flex max-sm:justify-between">
                 <div className="font-bold text-2xl inline-flex items-center">
                   <span className="font-bold mr-2 text-customOrange">Freelance</span>
                 </div>
-                <p className="shadow-btn font-bold mt-3 p-1">Web Developer</p>
+                <p className="shadow-inset font-bold mt-3 rounded-2xl p-3">Web Developer</p>
               </div>
-              <div className="w-3/5 ml-10 mb-1 border-b-[3px]"></div>
+              <div className="w-3/5 max-sm:w-full max-sm:mt-5 ml-10 max-sm:ml-0 mb-1 pb-2 flex justify-between border-b-[3px]">
+                <p className="shadow-date rounded-projectImg  p-5 pt-2 pb-2">01.2023</p>
+                <p className="shadow-date rounded-projectImg  p-5 pt-2 pb-2">01.2023</p>
+              </div>{" "}
             </div>
             <p className="mt-7">
               Creating layouts, working with APIs, fixing bugs, and implementing simple

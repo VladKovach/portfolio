@@ -11,10 +11,10 @@ function App() {
     <div className="h-full relative">
       <Header />
       <SideNav /> {/* ← our new scroll-spy nav */}
-      <div className="flex-1 ml-24 mr-4">
+      <div className="flex-1 ml-24 mr-4 max-sm:ml-14">
         
         {/* leave room for the sidebar */}
-        <main className="max-w-[1100px] mx-auto">
+        <main className="max-w-[1100px] mx-auto pb-20">
           <section id="about" className="pt-16">
             <Hero />
           </section>
