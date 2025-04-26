@@ -1,6 +1,7 @@
 import { AnimatedBorder } from "./ui/AnimatedBorder/AnimatedBorder";
 import SkillItem from "./ui/SkillItem";
 const Skills = () => {
+  
   return (
     <div  className="mt-10 scroll-mt-20">
       <div className="">

@@ -7,6 +7,7 @@ import Projects from "./components/Projects";
 import SideNav from "./components/SideNav";
 
 function App() {
+  
   return (
     <div className="h-full relative">
       <Header />

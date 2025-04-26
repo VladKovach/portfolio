@@ -6,6 +6,8 @@ import myPhoto from "../../assets/images/myPhoto.png";
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [theme, setTheme] = useDarkMode("");
+  console.log('theme = ', theme);
+  
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const navLinks = (
     <>

@@ -1,5 +1,3 @@
-
-
 .card {
   --start: 0;
   position: relative;
@@ -8,7 +6,7 @@
   overflow-y: visible;
 
   transition: border-color 1s ease-in-out;
-} 
+}
 
 .card::before {
   position: absolute;
@@ -20,10 +18,10 @@
   transform: translate(-50%, -50%);
   border-radius: 12px;
   border: 2px solid transparent;
-  background: radial-gradient(circle, #d3d9d4 0%, #d3d9d4 100%);
+  background: radial-gradient(circle, #748d92 0%, #748d92 100%);
   background-attachment: fixed;
   mask: linear-gradient(#0000, #0000),
-    conic-gradient(from calc((var(--start) - 15) * 1deg), #ffffff1f 0deg, white, #ffffff00 100deg);
+    conic-gradient(from calc((var(--start) - 15) * 1deg), #0000001f 0deg, #748d92, #00000000 100deg);
   mask-composite: intersect;
   mask-clip: padding-box, border-box;
   opacity: 0;

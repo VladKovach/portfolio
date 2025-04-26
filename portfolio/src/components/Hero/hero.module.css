@@ -169,27 +169,21 @@
 }
 /* Faces */
 .cube .face_front {
-  background: #ffff;
   transform: translateZ(25px);
 }
 .cube .face_back {
-  background: #ffff;
   transform: rotateY(180deg) translateZ(25px);
 }
 .cube .face_right {
-  background: #ffff;
   transform: rotateY(90deg) translateZ(25px);
 }
 .cube .face_left {
-  background: #ffff;
   transform: rotateY(-90deg) translateZ(25px);
 }
 .cube .face_top {
-  background: #ffff;
   transform: rotateX(90deg) translateZ(25px);
 }
 .cube .face_bottom {
-  background: #ffff;
   transform: rotateX(-90deg) translateZ(25px);
 }
 

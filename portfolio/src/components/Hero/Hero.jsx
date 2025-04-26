@@ -51,20 +51,20 @@ const Hero = () => {
         {cubes.map((cube) => (
           <div key={cube.id} className={styles.cube}>
             <div
-              className={`${styles.face} ${styles.face_front} inline-flex items-center justify-center`}
+              className={`${styles.face} ${styles.face_front} dark:bg-white bg-grayDark  inline-flex items-center justify-center`}
             >
               {/* <img width={40} height={40} className="rounded " src={cube.svg} /> */}
               <GetSvg svg={cube.svg} />
             </div>
-            <div className={`${styles.face} ${styles.face_back}`}></div>
+            <div className={`${styles.face} ${styles.face_back} dark:bg-white bg-grayDark `}></div>
             <div
-              className={`${styles.face} ${styles.face_right} inline-flex items-center justify-center`}
+              className={`${styles.face} ${styles.face_right} inline-flex items-center justify-center dark:bg-white bg-grayDark `}
             >
               <GetSvg svg={cube.svg2} />
             </div>
-            <div className={`${styles.face} ${styles.face_left}`}></div>
-            <div className={`${styles.face} ${styles.face_top}`}></div>
-            <div className={`${styles.face} ${styles.face_bottom}`}></div>
+            <div className={`${styles.face} ${styles.face_left} dark:bg-white bg-grayDark `}></div>
+            <div className={`${styles.face} ${styles.face_top} dark:bg-white bg-grayDark `}></div>
+            <div className={`${styles.face} ${styles.face_bottom} dark:bg-white bg-grayDark `}></div>
           </div>
         ))}
       </div>

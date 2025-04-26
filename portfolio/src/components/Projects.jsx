@@ -7,12 +7,12 @@ import SkillLogo from "./ui/SkillLogo/SkillLogo";
 
 const Projects = () => {
   return (
-    <div  className="flex flex-col mt-10 z-21 scroll-mt-20">
+    <div className="flex flex-col mt-10 z-21 scroll-mt-20">
       <h2 className="font-bold text-3xl">Projects</h2>
       <AnimatedBorder>
-        <div className="p-2 flex max-mobile:flex-col-reverse  w-full justify-between">
+        <div className="p-2 flex max-mobile:flex-col-reverse max-mobile:items-center   w-full justify-between">
           <a
-            className="duration-300  shadow ml-2  hover:scale-103 max-mobile:flex max-mobile:justify-center max-mobile:mt-5"
+            className="duration-300  shadow ml-2  hover:scale-103 rounded-projectImg max-mobile:flex   max-mobile:w-fit max-mobile:justify-center max-mobile:mt-5"
             href="https://vladkovach.github.io/plantShop/"
             target="_blank"
           >
@@ -47,9 +47,9 @@ const Projects = () => {
         </div>
       </AnimatedBorder>
       <AnimatedBorder>
-        <div className="p-2 flex max-mobile:flex-col-reverse  w-full justify-between">
+        <div className="p-2 flex max-mobile:flex-col-reverse max-mobile:items-center  w-full justify-between">
           <a
-            className="duration-300  shadow ml-2  hover:scale-103 max-mobile:flex max-mobile:justify-center max-mobile:mt-5"
+            className="duration-300  shadow ml-2  hover:scale-103  rounded-projectImg max-mobile:flex max-mobile:w-fit max-mobile:justify-center max-mobile:mt-5"
             href="https://posterprint.com.ua"
             target="_blank"
           >
@@ -83,7 +83,7 @@ const Projects = () => {
 
             <div className="mt-5 w-full p-1 max-mobile:text-center">
               <SkillLogo name="Css" index={0} />
-              <SkillLogo name="Next.js" index={1} />
+              <SkillLogo name="Next.js" index={1} darkSvg={true} />
               <SkillLogo name="Redux" index={2} />
               <SkillLogo name="Formik" index={2} />
               <SkillLogo name="Jest" index={3} />

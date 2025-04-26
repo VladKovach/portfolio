@@ -86,7 +86,7 @@ const Experience = () => {
             </div>
             <p className="mt-7">Development of an online shop.</p>
             <div className="mt-5 w-full p-1 max-mobile:text-center">
-              <SkillLogo name="Next.js" index={1} />
+              <SkillLogo name="Next.js" index={1} darkSvg={true}/>
               <SkillLogo name="Css" index={2} />
               <SkillLogo name="Js" index={3} />
               <SkillLogo name="Webpack" index={5} />
