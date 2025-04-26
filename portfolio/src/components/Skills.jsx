@@ -4,7 +4,7 @@ const Skills = () => {
   return (
     <div  className="mt-10 scroll-mt-20">
       <div className="">
-        <h2 className="font-bold text-textLight text-xl">Stack:</h2>
+        <h2 className="font-bold  text-xl">Stack:</h2>
         {/* <div className="w-5/6 flex mt-2 flex-wrap shadow-card rounded p-3"> */}
         <AnimatedBorder index={0}>
           <SkillItem name="HTML" />

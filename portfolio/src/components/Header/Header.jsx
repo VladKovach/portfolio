@@ -5,9 +5,8 @@ import { useDarkMode } from "../../hooks/useDarkMode";
 import myPhoto from "../../assets/images/myPhoto.png";
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [theme, setTheme] = useDarkMode("dark");
+  const [theme, setTheme] = useDarkMode("");
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-
   const navLinks = (
     <>
       <a
@@ -74,7 +73,13 @@ export const Header = () => {
   );
   return (
     <header
-      className={`${styles.header}  p-4 w-full bg-backgroundLight dark:bg-backgroundDark transition-colors duration-100 flex justify-between items-center`}
+      className={`${styles.header}  p-4 w-full bg-backgroundLight dark:bg-backgroundDark  transition-colors duration-100 flex justify-between items-center`}
+      style={{
+        animationName: theme === "dark" ? "scrollheaderDark" : "scrollheader",
+        animationFillMode: "both",
+        animationTimeline: "scroll()",
+        animationRange: "50px 140px",
+      }}
     >
       <span className="">
         <img src={myPhoto} width="50px" height="50px" alt="my photo" />
