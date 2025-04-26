@@ -83,7 +83,7 @@ const Contact = () => {
                   className={`
                 mt-1 block w-full bg-grayDark px-4 py-2 transition-colors duration-150 rounded-lg
                 focus:bg-backgroundDark focus:shadow focus:shadow-textLight focus:outline-none 
-                ${errors[name] && " border border-customOrange" }
+                ${errors[name] && " border border-darkOrange" }
               `}
                   type={type}
                   name={name}
@@ -93,7 +93,7 @@ const Contact = () => {
                   onBlur={handleBlur}
                   required
                 />
-                {errors[name] && <p className="mt-1 text-customOrange text-sm">{errors[name]}</p>}
+                {errors[name] && <p className="mt-1 text-darkOrange text-sm">{errors[name]}</p>}
               </label>
             ))}
 
@@ -103,7 +103,7 @@ const Contact = () => {
                 className={`
               mt-1 block w-full px-4 py-2 bg-grayDark transition-all duration-300 relative rounded-lg resize-none h-32
               focus:bg-backgroundDark focus:shadow focus:shadow-textLight focus:outline-none 
-                ${errors.message && " border border-customOrange" }
+                ${errors.message && " border border-darkOrange" }
               `}
                 name="message"
                 placeholder="Type your message here..."
@@ -112,7 +112,7 @@ const Contact = () => {
                 onBlur={handleBlur}
                 required
               />
-              {errors.message && <p className="mt-1 text-customOrange text-sm">{errors.message}</p>}
+              {errors.message && <p className="mt-1 text-darkOrange text-sm">{errors.message}</p>}
             </div>
 
             <button

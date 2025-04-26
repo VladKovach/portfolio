@@ -28,7 +28,7 @@ const Projects = () => {
               href="https://vladkovach.github.io/plantShop/"
               target="_blank"
             >
-              <span className="mr-2 text-customOrange">Planty</span>
+              <span className="mr-2 text-darkOrange dark:text-lightOrange">Planty</span>
               <GetSvg svg="external" />
             </a>
             <ul className="list-disc ml-5 mt-3 space-y-2 text-sm w-full">
@@ -65,7 +65,7 @@ const Projects = () => {
               href="https://posterprint.com.ua"
               target="_blank"
             >
-              <span className="mr-2 text-customOrange">PosterPrint</span>
+              <span className="mr-2 text-darkOrange dark:text-lightOrange">PosterPrint</span>
               <GetSvg svg="external" />
             </a>
             <ul className="list-disc ml-5 mt-3 space-y-2 text-sm">

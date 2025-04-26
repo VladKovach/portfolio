@@ -1,5 +1,4 @@
 import { GetSvg } from "../GetSvg";
-import ScaleAnimatedElement from "../ui/ScaleAnimatedElement";
 import styles from "./hero.module.css";
 
 const cubes = [
@@ -16,10 +15,11 @@ const cubes = [
 const heroIdeas = ["Imagine", "Plan", "Desire", "Think"];
 const Hero = () => {
   return (
-    <div  className=" w-full flex justify-around  p-5 mt-15 scroll-mt-20">
+    <div className=" w-full flex justify-around  p-5 mt-15 scroll-mt-20">
       <div className="flex flex-col  h-full w-2/5 mr-15">
-        <h1 className="text-2xl font-bold text-textLight ">
-          <span className="text-customOrange text-3xl">Let’s</span> Build What You{" "}
+        <h1 className="text-2xl font-bold  ">
+          <span className="dark:text-lightOrange text-darkOrange text-3xl">Let’s</span> Build What
+          You{" "}
           <div className={styles.slider}>
             <div className={styles.container}>
               {heroIdeas.map((word) => (
@@ -34,13 +34,14 @@ const Hero = () => {
             {/* Imagine&nbsp; <GetSvg svg="idea" /> */}
           </div>
         </h1>
-        <p className="text-lg text-textLight mt-4 font-bold">
-          <span className="text-customOrange text-xl"> Hi there!</span> It's nice to see you😊 I'm
-          Vlad, a frontend developer with a strong desire to create impactful digital experiences.
+        <p className="text-lg mt-4 font-bold">
+          <span className="text-darkOrange dark:text-lightOrange text-xl"> Hi there!</span> It's
+          nice to see you😊 I'm Vlad, a frontend developer with a strong desire to create impactful
+          digital experiences.
         </p>
         <a
           href="#projects"
-          className={`${styles.shadowBtn} mt-6 px-4 py-2 font-bold w-[140px] text-white  rounded shadow-btn hover:shadow-btnhover hover:scale-98  duration-100 `}
+          className={`${styles.shadowBtn} mt-6 px-4 py-2 font-bold w-[140px]  rounded shadow-btn hover:shadow-btnhover hover:scale-98  duration-100 `}
         >
           View Projects
         </a>

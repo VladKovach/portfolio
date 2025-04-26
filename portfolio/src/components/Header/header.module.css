@@ -3,19 +3,29 @@
   top: 0;
   left: 0;
   height: 70px;
-  background: #212a31;
   z-index: 100;
   animation: scrollheader 0.3s;
   animation-fill-mode: both;
   animation-timeline: scroll();
   animation-range: 50px 140px;
 }
+.dark header{
+  animation: scrollheaderDark 0.3s;
+}
 @keyframes scrollheader {
   to {
-    height: 50px;
-    box-shadow: -4px -4px 12px hsla(0, 0%, 100%, 0.05), 4px 4px 12px #000;
+    height: 55px;
+    box-shadow: -4px -4px 12px hsla(0, 0%, 100%, 0.05), 4px 4px 12px #cacaca;
+
   }
 }
+@keyframes scrollheaderDark {
+  to {
+    height: 55px;
+    box-shadow: -4px -4px 12px hsla(0, 0%, 100%, 0.05), 4px 4px 12px #000;
+  }
+  
+} 
 
 .cusomLabel {
   width: 100%;
@@ -72,7 +82,7 @@
   transform: translateX(-100%);
 }
 .darkmode_container:checked + .cusomLabel svg:nth-of-type(1) {
-  fill: #7e7e7e;
+  fill: #fff;
 }
 .darkmode_container:checked + .cusomLabel svg:nth-of-type(2) {
   fill: #fff;

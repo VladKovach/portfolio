@@ -5,7 +5,7 @@ export const GetSvg = ({ svg, width, height }) => {
     case "sun":
       return (
         <svg
-          className="w-6 h-6 z-20 text-gray-200"
+          className="w-6 h-6 z-20 text-white"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -26,7 +26,7 @@ export const GetSvg = ({ svg, width, height }) => {
     case "moon":
       return (
         <svg
-          className="w-6 h-6 z-20 text-gray-800 dark:text-white"
+          className="w-6 h-6 z-20 text-gray-800 "
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           width="24"

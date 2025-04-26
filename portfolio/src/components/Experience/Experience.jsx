@@ -8,7 +8,7 @@ import SkillLogo from "../ui/SkillLogo/SkillLogo";
 const Experience = () => {
   return (
     <div className="flex flex-col mt-10 z-21 scroll-mt-20">
-      <h2 className="font-bold text-3xl">Experience</h2>
+      <h2 className="font-bold text-3xl ">Experience</h2>
       <AnimatedBorder>
         <div className="p-2  w-full ">
           {/* <div className=" relative flex flex-col">
@@ -28,7 +28,7 @@ const Experience = () => {
                   href="https://vladkovach.github.io/plantShop/"
                   target="_blank"
                 >
-                  <span className="font-bold mr-2 text-customOrange">2event</span>
+                  <span className="font-bold mr-2 text-darkOrange dark:text-lightOrange">2event</span>
                   <GetSvg svg="external" />
                 </a>
                 <p className="shadow-inset font-bold mt-3 rounded-2xl p-3 ml-2">Frontend Developer</p>
@@ -74,7 +74,7 @@ const Experience = () => {
                   href="https://vladkovach.github.io/posterprint/"
                   target="_blank"
                 >
-                  <span className="font-bold mr-2 text-customOrange">PosterPrint</span>
+                  <span className="font-bold mr-2 text-darkOrange dark:text-lightOrange">PosterPrint</span>
                   <GetSvg svg="external" />
                 </a>
                 <p className="shadow-inset font-bold mt-3 rounded-2xl p-3 ml-2">Frontend Developer</p>
@@ -113,7 +113,7 @@ const Experience = () => {
             <div className="flex items-end max-sm:flex-col max-sm:items-center">
               <div className=" max-sm:w-full max-sm:flex max-sm:justify-between">
                 <div className="font-bold text-2xl inline-flex items-center">
-                  <span className="font-bold mr-2 text-customOrange">Freelance</span>
+                  <span className="font-bold mr-2 text-darkOrange dark:text-lightOrange">Freelance</span>
                 </div>
                 <p className="shadow-inset font-bold mt-3 rounded-2xl p-3">Web Developer</p>
               </div>
