@@ -38,11 +38,11 @@ export default function SideNav() {
     <nav className="fixed top-1/2 left-4 transform -translate-y-1/2 h-1/2">
       <div className="relative h-full flex flex-col items-center">
         {/* Gray track */}
-        <div className="absolute w-[2px] bg-grayDark top-0 bottom-0" />
+        <div className="absolute w-[2px] bg-textLight dark:bg-grayDark top-0 bottom-0" />
 
         {/* Gradient fill */}
         <div
-          className="absolute w-[2px] bg-gradient-to-b from-grayDark to-textLight top-0"
+          className="absolute w-[2px] bg-gradient-to-b from-textLight to-grayDark dark:from-grayDark dark:to-textLight top-0"
           style={{ height: `${fillPercent}%`, transition: "height 0.5s ease" }}
         />
 
@@ -56,8 +56,12 @@ export default function SideNav() {
                   href={`#${sec.id}`}
                   className={`
                     block w-5 h-5 max-sm:w-4 max-sm:h-4
-                    ${isActive ? "bg-textLight rotate-135 scale-110" : "bg-grayDark"}
-                     border-grayDark
+                    ${
+                      isActive
+                        ? "bg-grayDark dark:bg-textLight rotate-135 scale-110"
+                        : "bg-textLight dark:bg-grayDark"
+                    }
+                     border-textLight dark:border-grayDark
                     transition-all duration-1000
                   `}
                   title={sec.label}
