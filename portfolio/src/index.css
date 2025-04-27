@@ -5,7 +5,7 @@
 @theme {
   --color-backgroundDark: #212a31;
   --color-backgroundLight: #fafafa;
-  --color-grayDark: #2e3944; 
+  --color-grayDark: #2e3944;
   --color-customBlue: #124e66;
   --color-textLight: #d3d9d4;
   --color-grayLight: #748d92;
@@ -20,10 +20,8 @@
   --shadow-inset: inset -2px -2px 4px hsla(0, 0%, 100%, 0.1), inset 2px 2px 4px rgba(0, 0, 0, 0.55);
   --shadow-date: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
     rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-    --shadow-cardDark: rgba(255, 255, 255, 0.24) 0px 0px 8px;
-
-
-  }
+  --shadow-cardDark: rgba(255, 255, 255, 0.24) 0px 0px 8px;
+}
 @keyframes scrollheaderDark {
   to {
     height: 55px;
@@ -64,8 +62,7 @@ video {
 
 input,
 textarea,
-select,
-button {
+select {
   font: inherit;
 }
 

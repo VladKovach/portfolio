@@ -45,7 +45,6 @@ const Hero = () => {
         >
           View Projects
         </a>
-        {/* <ScaleAnimatedElement text={"View Projects"} /> */}
       </div>
       <div className={`grid grid-cols-3 gap-2 content-center ${styles.scene}`}>
         {cubes.map((cube) => (
@@ -53,7 +52,6 @@ const Hero = () => {
             <div
               className={`${styles.face} ${styles.face_front} dark:bg-white bg-grayDark  inline-flex items-center justify-center`}
             >
-              {/* <img width={40} height={40} className="rounded " src={cube.svg} /> */}
               <GetSvg svg={cube.svg} />
             </div>
             <div className={`${styles.face} ${styles.face_back} dark:bg-white bg-grayDark `}></div>

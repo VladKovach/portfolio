@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 import { AnimatedBorder } from "./ui/AnimatedBorder/AnimatedBorder";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [values, setValues] = useState({ email: "", subject: "", message: "" });
   const [errors, setErrors] = useState({});
   const [touched, setTouched] = useState({});
+  const [loading, setLoading] = useState(false);
+  const [successMessage, setSuccessMessage] = useState("");
 
-  // Simple front-end validation rules
   const validate = (name, value) => {
     switch (name) {
       case "email":
         if (!value) return "It'll be much better to write one)";
-        // basic email regex
         if (!/^\S+@\S+\.\S+$/.test(value)) return "Please enter a valid email";
         break;
       case "subject":
@@ -27,8 +28,6 @@ const Contact = () => {
   };
 
   const handleChange = (e) => {
-    console.log('errors = ', errors);
-    
     const { name, value } = e.target;
     setValues((v) => ({ ...v, [name]: value }));
     if (touched[name]) {
@@ -42,9 +41,8 @@ const Contact = () => {
     setErrors((err) => ({ ...err, [name]: validate(name, value) }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // validate all
     const newErrors = {};
     Object.keys(values).forEach((k) => {
       const error = validate(k, values[k]);
@@ -55,36 +53,45 @@ const Contact = () => {
       setTouched({ email: true, subject: true, message: true });
       return;
     }
-    // otherwise submit via Formspree
-    e.target.submit();
+
+    try {
+      setLoading(true);
+      setSuccessMessage("");
+
+      await emailjs.sendForm("service_jmfmg4j", "template_w0wvef5", e.target, "BFtEbcnNLQJi0tb_z");
+      setSuccessMessage("Your message was sent successfully! 🚀");
+      setValues({ email: "", subject: "", message: "" });
+      setTouched({});
+      setErrors({});
+    } catch (error) {
+      console.error("Email sending error:", error);
+      setSuccessMessage("Something went wrong. Please try again later. ❌");
+    } finally {
+      setLoading(false);
+    }
   };
+
   return (
     <div className="scroll-mt-20">
       <h2 className="font-bold text-3xl">Contact</h2>
       <AnimatedBorder>
-        <div className="max-w-xl mx-auto p-6  ">
+        <div className="max-w-xl mx-auto p-6">
           <p className="mb-6 font-bold text-center">
             Have a question or a proposal? Feel free to reach out!😊
           </p>
-          <form
-            onSubmit={handleSubmit}
-            action="https://formspree.io/f/your-form-id"
-            method="POST"
-            noValidate
-            className="space-y-6"
-          >
+          <form onSubmit={handleSubmit} noValidate className="space-y-6">
             {[
               { label: "Email", name: "email", type: "email", placeholder: "you@example.com" },
               { label: "Subject", name: "subject", type: "text", placeholder: "Subject" },
             ].map(({ label, name, type, placeholder }) => (
               <label key={name} className="block">
-                <span className="block text-sm font-medium ">{label}</span>
+                <span className="block text-sm font-medium">{label}</span>
                 <input
                   className={`
-                mt-1 block w-full bg-grayDark px-4 py-2 transition-colors duration-150 rounded-lg
-                focus:bg-backgroundDark focus:shadow focus:shadow-textLight focus:outline-none 
-                ${errors[name] && " border border-darkOrange" }
-              `}
+                    mt-1 block w-full bg-textLight dark:bg-grayDark px-4 py-2 rounded-lg
+                    focus:bg-backgroundLight dark:focus:bg-backgroundDark focus:shadow focus:outline-none 
+                    ${errors[name] && "border border-darkOrange"}
+                  `}
                   type={type}
                   name={name}
                   placeholder={placeholder}
@@ -98,13 +105,13 @@ const Contact = () => {
             ))}
 
             <div className="block">
-              <label className="block text-sm font-medium ">Your Message</label>
+              <label className="block text-sm font-medium">Your Message</label>
               <textarea
                 className={`
-              mt-1 block w-full px-4 py-2 bg-grayDark transition-all duration-300 relative rounded-lg resize-none h-32
-              focus:bg-backgroundDark focus:shadow focus:shadow-textLight focus:outline-none 
-                ${errors.message && " border border-darkOrange" }
-              `}
+                  mt-1 block w-full bg-textLight relative dark:bg-grayDark px-4 py-2 rounded-lg resize-none h-32
+                  focus:bg-backgroundLight dark:focus:bg-backgroundDark focus:shadow focus:outline-none 
+                  ${errors.message && "border border-darkOrange"}
+                `}
                 name="message"
                 placeholder="Type your message here..."
                 value={values.message}
@@ -117,10 +124,15 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="w-full font-bold shadow-btn hover:shadow-btnhover hover:scale-98 text-white  py-2 rounded-lg transition"
+              className="w-full font-bold shadow-btn hover:shadow-btnhover hover:scale-98 py-2 rounded-lg duration-100"
+              disabled={loading}
             >
-              Send Message
+              {loading ? "Sending..." : "Send Message"}
             </button>
+
+            {successMessage && (
+              <p className="mt-4 text-center font-semibold text-green-500">{successMessage}</p>
+            )}
           </form>
         </div>
       </AnimatedBorder>
