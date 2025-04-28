@@ -1,0 +1,31 @@
+.grdient_box {
+    box-shadow:  #2e3944 0px 0px 6px 4px;
+    width: 50%;
+    position: relative;
+  }  
+
+  .grdient_box::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    width: 20%;
+    height: 100%;
+    filter: blur(10px);
+    opacity: 0.5;
+    z-index: -1;
+    animation: rightLeft 4s ease-in-out  infinite both alternate;
+  }
+  @keyframes rightLeft {
+    0% {
+      transform: translateX(0);
+    }
+   
+    100% {
+      transform: translateX(400%);
+    }
+    
+  }

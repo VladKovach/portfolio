@@ -1,0 +1,45 @@
+.card {
+  --start: 0;
+  position: relative;
+  z-index: 20;
+  overflow-x: hidden;
+  overflow-y: visible;
+
+  transition: border-color 1s ease-in-out;
+}
+
+.card::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 12px;
+  border: 3px solid transparent;
+  background: radial-gradient(circle, #748d92 0%, #748d92 100%);
+  background-attachment: fixed;
+  mask: linear-gradient(#0000, #0000),
+    conic-gradient(from calc((var(--start) - 15) * 1deg), #0000001f 0deg, #748d92, #00000000 100deg);
+  mask-composite: intersect;
+  mask-clip: padding-box, border-box;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.glow {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(15px);
+  filter: saturate(200);
+}
+
+.card:hover::before {
+  opacity: 1;
+}
