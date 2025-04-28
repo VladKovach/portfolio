@@ -699,7 +699,6 @@ export const GetSvg = ({ svg, width, height, darkSvg }) => {
       );
 
     case "Next.js":
-      console.log('darkSvg = ', darkSvg);
       
       return (
         <svg

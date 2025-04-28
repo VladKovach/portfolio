@@ -10,7 +10,6 @@ export const useDarkMode = () => {
       ? "dark"
       : "light"
   );
-console.log('theme = ', theme);
 
   useEffect(() => {
     if (theme === "dark") {
