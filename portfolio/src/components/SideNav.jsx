@@ -1,4 +1,4 @@
-// SideNav.jsx
+
 import { useEffect, useState } from "react";
 
 const sections = [
@@ -37,16 +37,13 @@ export default function SideNav() {
   return (
     <nav className="fixed top-1/2 left-4 transform -translate-y-1/2 h-1/2">
       <div className="relative h-full flex flex-col items-center">
-        {/* Gray track */}
         <div className="absolute w-[2px] bg-textLight dark:bg-grayDark top-0 bottom-0" />
 
-        {/* Gradient fill */}
         <div
           className="absolute w-[2px] bg-gradient-to-b from-textLight to-grayDark dark:from-grayDark dark:to-textLight top-0"
           style={{ height: `${fillPercent}%`, transition: "height 0.5s ease" }}
         />
 
-        {/* Squares */}
         <ul className="relative z-10 flex flex-col items-center justify-between h-full">
           {sections.map((sec) => {
             const isActive = active === sec.id;
