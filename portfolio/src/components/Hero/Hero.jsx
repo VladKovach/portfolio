@@ -15,8 +15,8 @@ const cubes = [
 const heroIdeas = ["Imagine", "Plan", "Desire", "Think"];
 const Hero = () => {
   return (
-    <div className=" w-full flex justify-around  p-5 mt-15">
-      <div className="flex flex-col  h-full w-2/5 mr-15">
+    <div className=" w-full flex justify-around max-sm:flex-col max-sm:items-center p-5 mt-15 max-sm:mt-0">
+      <div className="flex flex-col  h-full w-2/5 max-sm:w-full mr-15 max-sm:mr-0">
         <h1 className="text-2xl font-bold  ">
           <span className="dark:text-lightOrange text-darkOrange text-3xl">Let’s</span> Build What
           You{" "}
@@ -41,12 +41,14 @@ const Hero = () => {
         </p>
         <a
           href="#projects"
-          className={`${styles.shadowBtn} mt-6 px-4 py-2 font-bold w-[140px]  rounded shadow-btn hover:shadow-btnhover hover:scale-98  duration-100 `}
+          className="mt-6 px-4 py-2 font-bold w-[140px]  rounded shadow-btn hover:shadow-btnhover  active:shadow-btnhover active:scale-98 duration-50 "
         >
           View Projects
         </a>
       </div>
-      <div className={`grid grid-cols-3 gap-2 content-center ${styles.scene}`}>
+      <div
+        className={`grid grid-cols-3 gap-2 max-sm:w-[200px] max-sm:mt-8  content-center ${styles.scene}`}
+      >
         {cubes.map((cube) => (
           <div key={cube.id} className={styles.cube}>
             <div
@@ -62,7 +64,9 @@ const Hero = () => {
             </div>
             <div className={`${styles.face} ${styles.face_left} dark:bg-white bg-grayDark `}></div>
             <div className={`${styles.face} ${styles.face_top} dark:bg-white bg-grayDark `}></div>
-            <div className={`${styles.face} ${styles.face_bottom} dark:bg-white bg-grayDark `}></div>
+            <div
+              className={`${styles.face} ${styles.face_bottom} dark:bg-white bg-grayDark `}
+            ></div>
           </div>
         ))}
       </div>

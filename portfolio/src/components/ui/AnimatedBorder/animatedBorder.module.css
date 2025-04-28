@@ -17,7 +17,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
   border-radius: 12px;
-  border: 2px solid transparent;
+  border: 3px solid transparent;
   background: radial-gradient(circle, #748d92 0%, #748d92 100%);
   background-attachment: fixed;
   mask: linear-gradient(#0000, #0000),

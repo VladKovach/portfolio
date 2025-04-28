@@ -19,7 +19,7 @@ const Contact = () => {
         if (!value) return "It'll be much better to write one)";
         break;
       case "message":
-        if (!value) return "Message cannot be empty";
+        if (!value) return "It'll be much better to write one)";
         if (value.length < 10) return "Could you please write at least 10 characters?";
         break;
       default:
@@ -72,7 +72,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="scroll-mt-20">
+    <div className="">
       <h2 className="font-bold text-3xl">Contact</h2>
       <AnimatedBorder>
         <div className="max-w-xl mx-auto p-6">
@@ -124,7 +124,7 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="w-full font-bold shadow-btn hover:shadow-btnhover hover:scale-98 py-2 rounded-lg duration-100"
+              className="w-full font-bold shadow-btn hover:shadow-btnhover  active:shadow-btnhover active:scale-98 py-2 rounded-lg duration-100"
               disabled={loading}
             >
               {loading ? "Sending..." : "Send Message"}
