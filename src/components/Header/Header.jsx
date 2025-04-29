@@ -6,7 +6,7 @@ import myPhoto from "../../assets/images/myPhoto.png";
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [theme, setTheme] = useDarkMode("");
-  
+
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const navLinks = (
     <>
@@ -90,15 +90,15 @@ export const Header = () => {
 
       <button
         onClick={toggleMenu}
-        className={`hidden max-sm:block ${isMenuOpen ? "fixed top-0 left-0 z-41" : ""}`}
+        className={`${styles.menuBtn} hidden max-sm:block ${isMenuOpen ? styles.menuCloseBtn : ""}`}
       >
-        {isMenuOpen ? (
+        {/* {isMenuOpen ? (
           <div>
             <GetSvg svg="close" />
           </div>
         ) : (
           <GetSvg svg="burger" />
-        )}
+        )} */}
       </button>
 
       <div className="w-[60px] h-[25px] inline-flex">
@@ -116,14 +116,32 @@ export const Header = () => {
         </label>
       </div>
       {/* for menuMobile is animation neeeded */}
-      {isMenuOpen && (
-        <div
-          className={`${styles.menuMobile} scroll-y-0 sm:hidden fixed top-0  left-0 w-full  bg-grayLight   h-full flex items-center justify-center   z-40`}
-        >
+      {/* {isMenuOpen && (
+        <>
+          <div
+            className={`${styles.menuMobile} scroll-y-0 sm:hidden fixed top-0  left-0 w-full  bg-black opacity-40  h-full    z-40`}
+          />
           <div className="flex flex-col font-bold space-y-7 py-4 sm:hidden text-2xl translate-y-[-30%]">
             {navLinks}
           </div>
-        </div>
+        </>
+      )} */}
+      {isMenuOpen && (
+        <></>
+        // <div className={styles.mobile_wrapper}>
+        //   <div className={styles.mobile_container}>
+        //     <div className={styles.content}>
+        //       <nav>
+        //         {/* <input className={styles.mobileInput} type="checkbox" id="hamburger1" /> */}
+        //         {/* <label className={styles.mobileLabel} for="hamburger1"></label> */}
+
+        //         <ul className={styles.nav_links}>
+        //         {navLinks}
+        //         </ul>
+        //       </nav>
+        //     </div>
+        //   </div>
+        // </div>
       )}
     </header>
   );
