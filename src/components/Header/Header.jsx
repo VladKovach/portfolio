@@ -90,7 +90,11 @@ export const Header = () => {
 
       <button
         onClick={toggleMenu}
-        className={`${styles.menuBtn} hidden max-sm:block ${isMenuOpen ? styles.menuCloseBtn : ""}`}
+        className={`${
+          styles.menuBtn
+        }  hidden border-4 border-backgroundDark dark:border-backgroundLight before:bg-backgroundDark dark:before:bg-backgroundLight after:bg-backgroundDark dark:after:bg-backgroundLight  max-sm:block ${
+          isMenuOpen ? styles.menuCloseBtn : ""
+        }`}
       >
         {/* {isMenuOpen ? (
           <div>
@@ -127,21 +131,18 @@ export const Header = () => {
         </>
       )} */}
       {isMenuOpen && (
-        <></>
-        // <div className={styles.mobile_wrapper}>
-        //   <div className={styles.mobile_container}>
-        //     <div className={styles.content}>
-        //       <nav>
-        //         {/* <input className={styles.mobileInput} type="checkbox" id="hamburger1" /> */}
-        //         {/* <label className={styles.mobileLabel} for="hamburger1"></label> */}
+      <div className={styles.mobile_wrapper}>
+        <div className={styles.mobile_container}>
+          <div className={styles.content}>
+            <nav>
+              {/* <input className={styles.mobileInput} type="checkbox" id="hamburger1" /> */}
+              {/* <label className={styles.mobileLabel} for="hamburger1"></label> */}
 
-        //         <ul className={styles.nav_links}>
-        //         {navLinks}
-        //         </ul>
-        //       </nav>
-        //     </div>
-        //   </div>
-        // </div>
+              <ul className={styles.nav_links}>{navLinks}</ul>
+            </nav>
+          </div>
+        </div>
+      </div>
       )}
     </header>
   );
