@@ -41,7 +41,7 @@ const Hero = () => {
         </p>
         <a
           href="#projects"
-          className="mt-6 px-4 py-2 font-bold w-[140px]  rounded shadow-btn hover:shadow-btnhover  active:shadow-btnhover active:scale-98 duration-50 "
+          className="mt-6 px-4 py-2 font-bold w-[140px]  rounded shadow-btn dark:shadow-btnDark hover:shadow-btnhover dark:hover:shadow-btnDarkHover  active:shadow-btnhover dark:active:shadow-btnDarkHover active:scale-98 duration-50 "
         >
           View Projects
         </a>
