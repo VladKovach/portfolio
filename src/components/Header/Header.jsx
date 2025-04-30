@@ -84,13 +84,13 @@ export const Header = () => {
         <img src={myPhoto} width="50px" height="50px" alt="my photo" />
       </span>
 
-      <nav className="hidden sm:flex space-x-4">{navLinks}</nav>
+      <nav className="hidden mobile:flex space-x-4">{navLinks}</nav>
 
       <button
         onClick={toggleMenu}
         className={`${
           styles.menuBtn
-        }  hidden border-4 border-backgroundDark dark:border-backgroundLight dark:text-backgroundLight before:bg-backgroundDark dark:before:bg-backgroundLight after:bg-backgroundDark dark:after:bg-backgroundLight  max-sm:block z-41 ${
+        }  hidden border-4 border-backgroundDark dark:border-backgroundLight dark:text-backgroundLight before:bg-backgroundDark dark:before:bg-backgroundLight after:bg-backgroundDark dark:after:bg-backgroundLight  max-mobile:block z-41 ${
           isMenuOpen ? styles.menuCloseBtn : ""
         }`}
       >
@@ -119,7 +119,7 @@ export const Header = () => {
       </div>
       {/* for menuMobile is animation neeeded */}
       <div
-        className={`scroll-y-0 sm:hidden fixed top-0  left-0 w-full  bg-backgroundLight dark:bg-backgroundDark  transition-opacity duration-300  h-full ${
+        className={`scroll-y-0 mobile:hidden fixed top-0  left-0 w-full  bg-backgroundLight dark:bg-backgroundDark  transition-opacity duration-300  h-full ${
           isMenuOpen ? "z-40 opacity-100" : "z-[-10] opacity-0"
         }`}
       />
@@ -127,7 +127,7 @@ export const Header = () => {
       {isMenuOpen && (
         <>
           <div
-            className={`scroll-y-0 sm:hidden fixed top-30 left-0   flex flex-col h-1/2  w-full justify-around  items-center ${
+            className={`scroll-y-0 mobile:hidden fixed top-30 left-0   flex flex-col h-1/2  w-full justify-around  items-center ${
               isMenuOpen ? "z-40 opacity-100" : "z-[-10] opacity-0"
             }`}
           >
