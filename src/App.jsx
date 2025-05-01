@@ -1,10 +1,10 @@
-import Skills from "./components/Skills";
-import Contact from "./components/Contact";
+import Skills from "./components/Skills/Skills";
 import Experience from "./components/Experience/Experience";
 import { Header } from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
-import Projects from "./components/Projects";
+import Projects from "./components/Projects/Projects";
 import SideNav from "./components/SideNav";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (

@@ -1,9 +1,9 @@
 import React from "react";
-import { AnimatedBorder } from "./ui/AnimatedBorder/AnimatedBorder";
-import plantShop from "../assets/images/plantShop.png";
-import posterPrint from "../assets/images/posterPrint.png";
-import { GetSvg } from "./GetSvg";
-import SkillLogo from "./ui/SkillLogo/SkillLogo";
+import plantShop from "../../assets/images/plantShop.png";
+import posterPrint from "../../assets/images/posterPrint.png";
+import SkillLogo from "../ui/SkillLogo/SkillLogo";
+import { AnimatedBorder } from "../ui/AnimatedBorder/AnimatedBorder";
+import { GetSvg } from "../GetSvg";
 
 const Projects = () => {
   return (

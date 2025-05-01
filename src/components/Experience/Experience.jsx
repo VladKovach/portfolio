@@ -1,8 +1,6 @@
 import React from "react";
 import { AnimatedBorder } from "../ui/AnimatedBorder/AnimatedBorder";
-import posterPrint from "../../assets/images/posterPrint.png";
 import { GetSvg } from "../GetSvg";
-import styles from "./experience.module.css";
 import SkillLogo from "../ui/SkillLogo/SkillLogo";
 
 const Experience = () => {
@@ -38,8 +36,8 @@ const Experience = () => {
                 </p>
               </div>
               <div className="w-3/5 max-sm:w-full max-sm:mt-5 ml-10 max-sm:ml-0 mb-1 pb-2 flex justify-between border-b-[3px]">
-                <p className="shadow-card rounded-projectImg  p-5 pt-2 pb-2">03.2024</p>
-                <p className="shadow-card rounded-projectImg  p-5 pt-2 pb-2">08.2024</p>
+                <p className="shadow-card dark:shadow-cardDark rounded-projectImg  p-5 pt-2 pb-2">03.2024</p>
+                <p className="shadow-card dark:shadow-cardDark rounded-projectImg  p-5 pt-2 pb-2">08.2024</p>
               </div>
             </div>
             <p className="mt-7">
@@ -79,8 +77,8 @@ const Experience = () => {
                 </p>
               </div>
               <div className="w-3/5 max-sm:w-full max-sm:mt-5 ml-10 max-sm:ml-0 mb-1 pb-2 flex justify-between border-b-[3px]">
-                <p className="shadow-card rounded-projectImg  p-5 pt-2 pb-2">04/2023</p>
-                <p className="shadow-card rounded-projectImg  p-5 pt-2 pb-2">02/2024</p>
+                <p className="shadow-card  dark:shadow-cardDark rounded-projectImg  p-5 pt-2 pb-2">04/2023</p>
+                <p className="shadow-card  dark:shadow-cardDark rounded-projectImg  p-5 pt-2 pb-2">02/2024</p>
               </div>
             </div>
             <p className="mt-7">Development of an online shop.</p>
@@ -119,8 +117,8 @@ const Experience = () => {
                 <p className="shadow-inset font-bold mt-3 rounded-2xl p-3">Frontend Developer</p>
               </div>
               <div className="w-3/5 max-sm:w-full max-sm:mt-5 ml-10 max-sm:ml-0 mb-1 pb-2 flex justify-between border-b-[3px]">
-                <p className="shadow-card rounded-projectImg  p-5 pt-2 pb-2">05.2022</p>
-                <p className="shadow-card rounded-projectImg  p-5 pt-2 pb-2">07.2023</p>
+                <p className="shadow-card  dark:shadow-cardDark rounded-projectImg  p-5 pt-2 pb-2">05.2022</p>
+                <p className="shadow-card  dark:shadow-cardDark rounded-projectImg  p-5 pt-2 pb-2">07.2023</p>
               </div>
             </div>
             <p className="mt-7">

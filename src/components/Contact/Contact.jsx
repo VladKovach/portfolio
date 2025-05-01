@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { AnimatedBorder } from "./ui/AnimatedBorder/AnimatedBorder";
 import emailjs from "@emailjs/browser";
+import { AnimatedBorder } from "../ui/AnimatedBorder/AnimatedBorder";
 
 const Contact = () => {
   const [values, setValues] = useState({ email: "", subject: "", message: "" });
