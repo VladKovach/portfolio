@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { AnimatedBorder } from "../ui/AnimatedBorder/AnimatedBorder";
+import { useSectionObserver } from "../../hooks/useSectionObserver";
 
 const Contact = () => {
   const [values, setValues] = useState({ email: "", subject: "", message: "" });
@@ -8,6 +9,7 @@ const Contact = () => {
   const [touched, setTouched] = useState({});
   const [loading, setLoading] = useState(false);
   const [successMessage, setSuccessMessage] = useState("");
+  const { isFirstTimeVisible } = useSectionObserver();
 
   const validate = (name, value) => {
     switch (name) {
@@ -72,7 +74,19 @@ const Contact = () => {
   };
 
   return (
-    <div className="">
+    <div
+      className={`${isFirstTimeVisible["contact"] ? "" : "invisible"}`}
+      style={
+        isFirstTimeVisible["contact"]
+          ? {
+              animationName: "fadeIn",
+              animationFillMode: "both",
+              animationDuration: "1s",
+              animationTimingFunction: "ease-in-out",
+            }
+          : {}
+      }
+    >
       <h2 className="font-bold text-3xl">Contact</h2>
       <AnimatedBorder>
         <div className="max-w-xl mx-auto p-6">

@@ -39,6 +39,17 @@
     box-shadow: -4px -4px 12px hsla(0, 0%, 100%, 0.05), 4px 4px 12px #cacaca;
   }
 }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+}
 *,
 ::before,
 ::after {

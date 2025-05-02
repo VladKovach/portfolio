@@ -1,9 +1,23 @@
+import { useSectionObserver } from "../../hooks/useSectionObserver";
 import { AnimatedBorder } from "../ui/AnimatedBorder/AnimatedBorder";
 import SkillItem from "../ui/SkillItem";
 const Skills = () => {
-  
+  const { isFirstTimeVisible } = useSectionObserver();
+
   return (
-    <div  className="mt-10 ">
+    <div
+      className={`mt-10 ${isFirstTimeVisible["skills"] ? "" : "invisible"}`}
+      style={
+        isFirstTimeVisible["skills"]
+          ? {
+              animationName: "fadeIn",
+              animationFillMode: "both",
+              animationDuration: "1s",
+              animationTimingFunction: "ease-in-out",
+            }
+          : {}
+      }
+    >
       <div className="">
         <h2 className="font-bold  text-xl">Stack:</h2>
         {/* <div className="w-5/6 flex mt-2 flex-wrap shadow-card rounded p-3"> */}

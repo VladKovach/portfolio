@@ -2,10 +2,24 @@ import React from "react";
 import { AnimatedBorder } from "../ui/AnimatedBorder/AnimatedBorder";
 import { GetSvg } from "../GetSvg";
 import SkillLogo from "../ui/SkillLogo/SkillLogo";
+import { useSectionObserver } from "../../hooks/useSectionObserver";
 
 const Experience = () => {
+  const { isFirstTimeVisible } = useSectionObserver();
   return (
-    <div className="flex flex-col mt-10 z-21 ">
+    <div
+      className={`flex flex-col mt-10 z-21 ${isFirstTimeVisible["experience"] ? "" : "invisible"}`}
+      style={
+        isFirstTimeVisible["experience"]
+          ? {
+              animationName: "fadeIn",
+              animationFillMode: "both",
+              animationDuration: "1s",
+              animationTimingFunction: "ease-in-out",
+            }
+          : {}
+      }
+    >
       <h2 className="font-bold text-3xl ">Experience</h2>
       <AnimatedBorder>
         <div className="p-2  w-full ">
@@ -36,8 +50,12 @@ const Experience = () => {
                 </p>
               </div>
               <div className="w-3/5 max-sm:w-full max-sm:mt-5 ml-10 max-sm:ml-0 mb-1 pb-2 flex justify-between border-b-[3px]">
-                <p className="shadow-card dark:shadow-cardDark rounded-projectImg  p-5 pt-2 pb-2">03.2024</p>
-                <p className="shadow-card dark:shadow-cardDark rounded-projectImg  p-5 pt-2 pb-2">08.2024</p>
+                <p className="shadow-card dark:shadow-cardDark rounded-projectImg  p-5 pt-2 pb-2">
+                  03.2024
+                </p>
+                <p className="shadow-card dark:shadow-cardDark rounded-projectImg  p-5 pt-2 pb-2">
+                  08.2024
+                </p>
               </div>
             </div>
             <p className="mt-7">
@@ -77,8 +95,12 @@ const Experience = () => {
                 </p>
               </div>
               <div className="w-3/5 max-sm:w-full max-sm:mt-5 ml-10 max-sm:ml-0 mb-1 pb-2 flex justify-between border-b-[3px]">
-                <p className="shadow-card  dark:shadow-cardDark rounded-projectImg  p-5 pt-2 pb-2">04/2023</p>
-                <p className="shadow-card  dark:shadow-cardDark rounded-projectImg  p-5 pt-2 pb-2">02/2024</p>
+                <p className="shadow-card  dark:shadow-cardDark rounded-projectImg  p-5 pt-2 pb-2">
+                  04/2023
+                </p>
+                <p className="shadow-card  dark:shadow-cardDark rounded-projectImg  p-5 pt-2 pb-2">
+                  02/2024
+                </p>
               </div>
             </div>
             <p className="mt-7">Development of an online shop.</p>
@@ -117,8 +139,12 @@ const Experience = () => {
                 <p className="shadow-inset font-bold mt-3 rounded-2xl p-3">Frontend Developer</p>
               </div>
               <div className="w-3/5 max-sm:w-full max-sm:mt-5 ml-10 max-sm:ml-0 mb-1 pb-2 flex justify-between border-b-[3px]">
-                <p className="shadow-card  dark:shadow-cardDark rounded-projectImg  p-5 pt-2 pb-2">05.2022</p>
-                <p className="shadow-card  dark:shadow-cardDark rounded-projectImg  p-5 pt-2 pb-2">07.2023</p>
+                <p className="shadow-card  dark:shadow-cardDark rounded-projectImg  p-5 pt-2 pb-2">
+                  05.2022
+                </p>
+                <p className="shadow-card  dark:shadow-cardDark rounded-projectImg  p-5 pt-2 pb-2">
+                  07.2023
+                </p>
               </div>
             </div>
             <p className="mt-7">
@@ -136,7 +162,7 @@ const Experience = () => {
             </div>
           </div>
         </div>
-      </AnimatedBorder> 
+      </AnimatedBorder>
       <article className="mt-10 p-6 dark:bg-backgroundLight bg-backgroundDark  dark:shadow-quoteDark shadow-quote text-center  max-w-2xl mx-auto">
         <blockquote className="text-lg italic dark:text-backgroundDark text-textLight">
           "This portfolio does not represent the full extent of my knowledge, as some projects are

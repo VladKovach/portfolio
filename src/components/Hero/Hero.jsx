@@ -1,3 +1,4 @@
+import { useSectionObserver } from "../../hooks/useSectionObserver";
 import { GetSvg } from "../GetSvg";
 import styles from "./hero.module.css";
 
@@ -14,8 +15,19 @@ const cubes = [
 ];
 const heroIdeas = ["Imagine", "Plan", "Desire", "Think"];
 const Hero = () => {
+  const { activeSection, hasBeenVisible } = useSectionObserver();
+  console.log("activeSection = ", activeSection);
+
   return (
-    <div className=" w-full flex justify-around max-sm:flex-col max-sm:items-center p-5 mt-15 max-sm:mt-0">
+    <div
+      className=" w-full flex justify-around max-sm:flex-col max-sm:items-center p-5 mt-15 max-sm:mt-0"
+      style={{
+        animationName: "fadeIn",
+        animationFillMode: "both",
+        animationDuration: "1s",
+        animationTimingFunction: "ease-in-out",
+      }}
+    >
       <div className="flex flex-col  h-full w-2/5 max-sm:w-full mr-15 max-sm:mr-0">
         <h1 className="text-2xl font-bold  ">
           <span className="dark:text-lightOrange text-darkOrange text-3xl">Let’s</span> Build What
