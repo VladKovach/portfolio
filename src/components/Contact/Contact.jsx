@@ -89,7 +89,7 @@ const Contact = () => {
                 <input
                   className={`
                     mt-1 block w-full bg-textLight dark:bg-grayDark px-4 py-2 rounded-lg
-                    focus:bg-backgroundLight dark:focus:bg-backgroundDark focus:shadow focus:outline-none 
+                    focus:bg-backgroundLight dark:focus:bg-backgroundDark focus:shadow-card dark:focus:shadow-cardDark focus:outline-none 
                     ${errors[name] && "border border-darkOrange"}
                   `}
                   type={type}
@@ -109,7 +109,7 @@ const Contact = () => {
               <textarea
                 className={`
                   mt-1 block w-full bg-textLight relative dark:bg-grayDark px-4 py-2 rounded-lg resize-none h-32
-                  focus:bg-backgroundLight dark:focus:bg-backgroundDark focus:shadow focus:outline-none 
+                  focus:bg-backgroundLight dark:focus:bg-backgroundDark focus:shadow-card dark:focus:shadow-cardDark focus:outline-none 
                   ${errors.message && "border border-darkOrange"}
                 `}
                 name="message"
