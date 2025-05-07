@@ -5,12 +5,17 @@ import Hero from "./components/Hero/Hero";
 import Projects from "./components/Projects/Projects";
 import SideNav from "./components/SideNav";
 import Contact from "./components/Contact/Contact";
+import ReactGA from "./ga";
 
 function App() {
+  ReactGA.send({
+    hitType: "pageview",
+    page: window.location.pathname,
+  });
   return (
     <div className="h-full relative">
       <Header />
-    <SideNav />
+      <SideNav />
       <div className="flex-1 ml-24 mr-4 max-sm:ml-14">
         <main className="max-w-[1100px] mx-auto pb-20">
           <section id="about" className="pt-16 scroll-mt-10">
