@@ -12,7 +12,6 @@ export function useSectionObserver() {
       (entries) => {
         entries.forEach((entry) => {
           const id = entry.target.id;
-console.log('id = ', id);
 
           if (entry.isIntersecting) {
             setActiveSection(id);
@@ -22,7 +21,7 @@ console.log('id = ', id);
               setIsFirstTimeVisible((prev) => ({ ...prev, [id]: true }));
             }
           }
-        });
+        }); 
       },
       { rootMargin: "-50% 0px -20% 0px" }
     );
