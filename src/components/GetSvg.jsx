@@ -1,5 +1,3 @@
-import React from "react";
-
 export const GetSvg = ({ svg, width, height, darkSvg }) => {
   switch (svg) {
     case "sun":
@@ -41,6 +39,69 @@ export const GetSvg = ({ svg, width, height, darkSvg }) => {
             strokeWidth="2"
             d="M12 21a9 9 0 0 1-.5-17.986V3c-.354.966-.5 1.911-.5 3a9 9 0 0 0 9 9c.239 0 .254.018.488 0A9.004 9.004 0 0 1 12 21Z"
           />
+        </svg>
+      );
+
+    case "de":
+      return (
+        <svg
+          viewBox="0 0 36 36"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          role="img"
+          className="w-6 h-6 rounded-full"
+          preserveAspectRatio="xMidYMid meet"
+        >
+          <path fill="#FFCD05" d="M0 27a4 4 0 0 0 4 4h28a4 4 0 0 0 4-4v-4H0v4z" />
+          <path fill="#ED1F24" d="M0 14h36v9H0z" />
+          <path fill="#141414" d="M32 5H4a4 4 0 0 0-4 4v5h36V9a4 4 0 0 0-4-4z" />
+        </svg>
+      );
+    case "en":
+      return (
+        <svg
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-6 h-6 rounded-full"
+        >
+          <path
+            fill="#41479B"
+            d="M473.655,88.276H38.345C17.167,88.276,0,105.443,0,126.621V385.38c0,21.177,17.167,38.345,38.345,38.345h435.31
+      c21.177,0,38.345-17.167,38.345-38.345V126.621C512,105.443,494.833,88.276,473.655,88.276z"
+          />
+          <path
+            fill="#F5F5F5"
+            d="M511.469,120.282c-3.022-18.159-18.797-32.007-37.814-32.007h-9.977l-163.54,107.147V88.276h-88.276v107.147
+      L48.322,88.276h-9.977c-19.017,0-34.792,13.847-37.814,32.007l139.778,91.58H0v88.276h140.309L0.531,391.717
+      c3.022,18.159,18.797,32.007,37.814,32.007h9.977l163.54-107.147v107.147h88.276V316.577l163.54,107.147h9.977
+      c19.017,0,34.792-13.847,37.814-32.007l-139.778-91.58H512v-88.276H371.691L511.469,120.282z"
+          />
+          <g>
+            <polygon
+              fill="#FF4B55"
+              points="282.483,88.276 229.517,88.276 229.517,229.517 0,229.517 0,282.483 
+        229.517,282.483 229.517,423.724 282.483,423.724 282.483,282.483 512,282.483 
+        512,229.517 282.483,229.517"
+            />
+            <path
+              fill="#FF4B55"
+              d="M24.793,421.252l186.583-121.114h-32.428L9.224,410.31
+        C13.377,415.157,18.714,418.955,24.793,421.252z"
+            />
+            <path
+              fill="#FF4B55"
+              d="M346.388,300.138H313.96l180.716,117.305c5.057-3.321,9.277-7.807,12.287-13.075L346.388,300.138z"
+            />
+            <path
+              fill="#FF4B55"
+              d="M4.049,109.475l157.73,102.387h32.428L15.475,95.842
+        C10.676,99.414,6.749,104.084,4.049,109.475z"
+            />
+            <path
+              fill="#FF4B55"
+              d="M332.566,211.862l170.035-110.375c-4.199-4.831-9.578-8.607-15.699-10.86L300.138,211.862H332.566z"
+            />
+          </g>
         </svg>
       );
 
@@ -321,7 +382,7 @@ export const GetSvg = ({ svg, width, height, darkSvg }) => {
           </g>
         </svg>
       );
-    case "Imagine":
+    case "imagine":
       return (
         <svg
           height="30px"
@@ -636,7 +697,7 @@ export const GetSvg = ({ svg, width, height, darkSvg }) => {
           </g>
         </svg>
       );
-    case "Plan":
+    case "plan":
       return (
         <svg
           version="1.1"
@@ -699,7 +760,6 @@ export const GetSvg = ({ svg, width, height, darkSvg }) => {
       );
 
     case "Next.js":
-      
       return (
         <svg
           width="40px"
@@ -722,7 +782,7 @@ export const GetSvg = ({ svg, width, height, darkSvg }) => {
           </defs>
         </svg>
       );
-    case "Think":
+    case "think":
       return (
         <svg
           viewBox="0 0 1024 1024"
@@ -997,7 +1057,7 @@ export const GetSvg = ({ svg, width, height, darkSvg }) => {
           />
         </svg>
       );
-    case "Desire":
+    case "desire":
       return (
         <svg
           viewBox="0 0 128 128"

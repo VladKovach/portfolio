@@ -1,0 +1,82 @@
+{
+  "header": {
+    "about": "Über mich",
+    "skills": "Fähigkeiten",
+    "projects": "Projekte",
+    "experience": "Erfahrung",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "lets": "Lass",
+    "buildWhat": "Wahr Machen, Was Du",
+    "imagine": "Träumst",
+    "plan": "Planst",
+    "desire": "Wünschst",
+    "think": "Denkst",
+    "hiThere": "Hallo!",
+    "intro": "Schön, dich zu sehen😊 Ich bin Vlad, ein Frontend-Entwickler mit dem starken Wunsch, wirkungsvolle digitale Erlebnisse zu schaffen.",
+    "viewProjects": "Projekte ansehen"
+  },
+  "about": {
+    "whatican": "Was kann ich:",
+    "skill1": "Sauberen, skalierbaren Code schreiben",
+    "skill2": "Vielfältige Funktionen implementieren",
+    "skill3": "Flüssige, optimierte, responsive Layouts erstellen",
+    "skill4": "Website-Geschwindigkeit gemäß Core Web Vitals optimieren",
+    "skill5": "Verschiedene APIs integrieren und designfertige Konzepte umsetzen",
+    "skill6": "Elegante Dark Modes entwickeln – von simplen Toggles bis zu vollständig animierten, individuellen Themes",
+    "skill7": "Nahtlos mit React, Vue.js, Angular oder framework-losen Lösungen arbeiten",
+    "skill8": "Effektiv im Team zusammenarbeiten oder eigenständig im Frontend arbeiten",
+    "skill9": "Leidenschaft in jedes Projekt einbringen – innovative, nutzerzentrierte Erlebnisse schaffen",
+    "skill10": "Ständig lernen und innovieren, um mit der sich entwickelnden Webwelt Schritt zu halten",
+    "languagesTitle": "Sprachen:",
+    "language1": "Englisch: B2",
+    "language2": "Deutsch: B2",
+    "language3": "Ukrainisch: Muttersprache",
+    "language4": "Russisch: C1"
+  },
+  "projects": {
+    "title": "Projekte",
+    "description1": "Entwickelte ein responsives/adaptives Design für alle Geräte für einen Online-Shop",
+    "description2": "Implementierte leichte benutzerdefinierte Animationen",
+    "description3": "Erstellte Layout und Funktionalität für einen Online-Shop",
+    "description4": "Entwickelte ein responsives und adaptives Design für alle Geräte",
+    "description5": "Implementierte dynamische Produktkarten und Zahlungsintegration",
+    "description6": "Fügte Authentifizierung mit Auth0 hinzu",
+    "description7": "Verwaltete Routing mit React Router",
+    "description8": "Verwaltete Formulare mit Formik und Validierung mit Yup",
+    "description9": "Integrierte interne und externe APIs",
+    "description10": "Implementierte Fehlerverfolgung mit Sentry",
+    "description11": "Optimierte Performance zur Verbesserung der PageSpeed",
+    "description12": "Effektive Zusammenarbeit im Team und enge Abstimmung mit Backend-Entwicklern"
+  },
+  "experience": {
+    "title": "Erfahrung",
+    "role1": "Frontend-Entwickler",
+    "desc1": "Entwicklung der Admin-Seite und Erweiterung der Funktionalität zur Erstellung von Events.",
+    "role2": "Frontend-Entwickler",
+    "desc2": "Entwicklung eines Online-Shops.",
+    "note": "Dieses Portfolio stellt nicht das volle Ausmaß meines Wissens dar, da einige Projekte noch in Arbeit sind und andere unveröffentlicht bleiben werden. Ich lerne kontinuierlich neue Fähigkeiten, und in den letzten sechs Monaten habe ich intensiv mein Englisch und Deutsch verbessert, um sowohl in mündlicher als auch schriftlicher Kommunikation Exzellenz zu erreichen. Dieses Portfolio wächst ständig mit Projekten, die sowohl meine aktuelle Expertise als auch neu erworbenes Wissen zeigen."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "description": "Hast du eine Frage oder einen Vorschlag? Schreib mir gerne! 😊",
+    "emailLabel": "E-Mail",
+    "emailPlaceholder": "du@beispiel.de",
+    "subjectLabel": "Betreff",
+    "subjectPlaceholder": "Betreff",
+    "messageLabel": "Deine Nachricht",
+    "messagePlaceholder": "Schreibe hier deine Nachricht...",
+    "send": "Nachricht senden",
+    "sending": "Senden...",
+    "success": "Deine Nachricht wurde erfolgreich gesendet! 🚀",
+    "error": "Etwas ist schiefgelaufen. Bitte versuche es später erneut. ❌",
+    "errors": {
+      "emailRequired": "Es wäre besser, eine E-Mail anzugeben)",
+      "emailInvalid": "Bitte gib eine gültige E-Mail-Adresse ein",
+      "subjectRequired": "Es wäre besser, einen Betreff anzugeben)",
+      "messageRequired": "Es wäre besser, eine Nachricht einzugeben)",
+      "messageMinLength": "Bitte schreibe mindestens 10 Zeichen"
+    }
+  }
+}

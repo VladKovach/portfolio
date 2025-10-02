@@ -1,14 +1,16 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { GetSvg } from "../GetSvg";
 import styles from "./header.module.css";
 import { useDarkMode } from "../../hooks/useDarkMode";
 import myPhoto from "../../assets/images/myPhoto.png";
 import useMobile from "../../hooks/useMobile";
+import { useTranslation } from "react-i18next";
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [theme, setTheme] = useDarkMode("");
   const isMobile = useMobile();
   console.log("isMobile", isMobile);
+  const { t, i18n } = useTranslation();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const navLinks = (
@@ -22,7 +24,7 @@ export const Header = () => {
             : "shadow-btn dark:shadow-btnDark  w-1/3 rounded active:shadow-btnhover dark:active:shadow-btnDarkHover active:scale-98"
         }`}
       >
-        About
+        {t("header.about")}
       </a>
       <a
         href="#skills"
@@ -33,7 +35,8 @@ export const Header = () => {
             : "shadow-btn dark:shadow-btnDark  w-1/3 rounded active:shadow-btnhover dark:active:shadow-btnDarkHover active:scale-98"
         }`}
       >
-        Skills
+                {t("header.skills")}
+
       </a>
       <a
         href="#projects"
@@ -44,7 +47,8 @@ export const Header = () => {
             : "shadow-btn dark:shadow-btnDark  w-1/3 rounded active:shadow-btnhover dark:active:shadow-btnDarkHover active:scale-98"
         }`}
       >
-        Projects
+                {t("header.projects")}
+
       </a>
       <a
         href="#experience"
@@ -55,7 +59,8 @@ export const Header = () => {
             : "shadow-btn dark:shadow-btnDark  w-1/3 rounded active:shadow-btnhover dark:active:shadow-btnDarkHover active:scale-98"
         }`}
       >
-        Experience
+                {t("header.experience")}
+
       </a>
       <a
         href="#contact"
@@ -66,10 +71,14 @@ export const Header = () => {
             : "shadow-btn dark:shadow-btnDark  w-1/3 rounded active:shadow-btnhover dark:active:shadow-btnDarkHover active:scale-98"
         }`}
       >
-        Contact
+                {t("header.contact")}
+
       </a>
     </>
   );
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
   return (
     <header
       className={`${styles.header}  p-4 w-full bg-backgroundLight dark:bg-backgroundDark  transition-colors duration-100 flex justify-between items-center`}
@@ -102,6 +111,21 @@ export const Header = () => {
           <GetSvg svg="burger" />
         )} */}
       </button>
+
+      <div className=" space-x-2">
+        <button onClick={() => changeLanguage("en")} className="px-3 py-1 border rounded">
+          <p className="flex items-center">
+            <GetSvg svg="en" /> <span className="ml-1"> English </span>
+            {/* <span className="hidden sm:inline">🇩🇪</span> */}
+          </p>
+        </button>
+        <button onClick={() => changeLanguage("de")} className="px-3 py-1 border rounded">
+          {/* <span className="hidden sm:inline">🇩🇪</span> */}
+          <p className="flex items-center">
+            <GetSvg svg="de" /> <span className="ml-1" > Deutsch </span>
+          </p>
+        </button>
+      </div>
 
       <div className="w-[60px] h-[25px] inline-flex">
         <input

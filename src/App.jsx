@@ -6,7 +6,8 @@ import Projects from "./components/Projects/Projects";
 import SideNav from "./components/SideNav";
 import Contact from "./components/Contact/Contact";
 import ReactGA from "./ga";
-import { useLocation } from "react-router-dom";
+import { BrowserRouter, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 function App() {
   function AnalyticsTracker() {

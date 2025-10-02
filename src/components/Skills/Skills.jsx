@@ -1,8 +1,10 @@
+import { useTranslation } from "react-i18next";
 import { useSectionObserver } from "../../hooks/useSectionObserver";
 import { AnimatedBorder } from "../ui/AnimatedBorder/AnimatedBorder";
 import SkillItem from "../ui/SkillItem";
 const Skills = () => {
   const { isFirstTimeVisible } = useSectionObserver();
+  const { t } = useTranslation();
 
   return (
     <div
@@ -51,27 +53,27 @@ const Skills = () => {
         </AnimatedBorder>
       </div>
       <div className=" mt-5 ">
-        <h2 className="font-bold text-xl">What I can:</h2>
+        <h2 className="font-bold text-xl">{t("about.whatican")}</h2>
         <AnimatedBorder classNames="flex flex-col" index={1}>
-          <SkillItem name="Write clean, scalable code" />
-          <SkillItem name="Implement diverse functionalities" />
-          <SkillItem name="Create smooth, optimized responsive layouts" />
-          <SkillItem name="Optimize site speed in line with Core Web Vitals" />
-          <SkillItem name="Integrate various APIs and turn design-ready concepts into reality" />
-          <SkillItem name="Develop elegant dark modes—from simple toggles to fully animated, custom themes" />
-          <SkillItem name="Work seamlessly with React, Vue.js, Angular, or framework-less solutions" />
-          <SkillItem name="Collaborate effectively within a team or thrive independently on the frontend" />
-          <SkillItem name="Channel passion into every project—crafting innovative, user-centric experiences" />
-          <SkillItem name="Continuously learn and innovate to keep up with the evolving web" />
+          <SkillItem name={t("about.skill1")} />
+          <SkillItem name={t("about.skill2")} />
+          <SkillItem name={t("about.skill3")} />
+          <SkillItem name={t("about.skill4")} />
+          <SkillItem name={t("about.skill5")} />
+          <SkillItem name={t("about.skill6")} />
+          <SkillItem name={t("about.skill7")} />
+          <SkillItem name={t("about.skill8")} />
+          <SkillItem name={t("about.skill9")} />
+          <SkillItem name={t("about.skill10")} />{" "}
         </AnimatedBorder>
       </div>
       <div className=" mt-5 ">
-        <h2 className="font-bold text-xl">Languages:</h2>
+        <h2 className="font-bold text-xl">{t("about.languagesTitle")}</h2>
         <AnimatedBorder index={2} classNames="flex flex-col">
-          <SkillItem name="English: B2" />
-          <SkillItem name="German: B2" />
-          <SkillItem name="Ukrainian: native" />
-          <SkillItem name="Russian: C1" />
+          <SkillItem name={t("about.language1")} />
+          <SkillItem name={t("about.language2")} />
+          <SkillItem name={t("about.language3")} />
+          <SkillItem name={t("about.language4")} />
         </AnimatedBorder>
       </div>
     </div>

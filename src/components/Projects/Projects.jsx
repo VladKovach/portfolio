@@ -4,11 +4,13 @@ import SkillLogo from "../ui/SkillLogo/SkillLogo";
 import { AnimatedBorder } from "../ui/AnimatedBorder/AnimatedBorder";
 import { GetSvg } from "../GetSvg";
 import { useSectionObserver } from "../../hooks/useSectionObserver";
+import { useTranslation } from "react-i18next";
 
 const Projects = () => {
   const { isFirstTimeVisible } = useSectionObserver();
 
-  
+  const { t } = useTranslation();
+
   return (
     <div
       className={`flex flex-col mt-10 z-21 ${isFirstTimeVisible["projects"] ? "" : "invisible"}`}
@@ -23,7 +25,7 @@ const Projects = () => {
           : {}
       }
     >
-      <h2 className="font-bold text-3xl">Projects</h2>
+      <h2 className="font-bold text-3xl">{t("projects.title")}</h2>
       <AnimatedBorder>
         <div className="p-2 flex max-mobile:flex-col-reverse max-mobile:items-center   w-full justify-between">
           <a
@@ -47,8 +49,8 @@ const Projects = () => {
               <GetSvg svg="external" />
             </a>
             <ul className="list-disc ml-5 mt-3 space-y-2 text-sm w-full">
-              <li>Created an all-device-responsive/adaptive design for an online Shop</li>
-              <li>Implemented some light custom animations</li>
+              <li>{t("projects.description1")}</li>
+              <li>{t("projects.description2")}</li>
             </ul>
             <div className="mt-5 w-full p-1 max-mobile:text-center">
               <SkillLogo name="Html" index={0} />
@@ -84,16 +86,15 @@ const Projects = () => {
               <GetSvg svg="external" />
             </a>
             <ul className="list-disc ml-5 mt-3 space-y-2 text-sm">
-              <li>Built the layout and functionality for an online shop</li>
-              <li>Developed a responsive and adaptive design for all devices</li>
-              <li>Implemented dynamic product cards and payment integration</li>
-              <li>Added authentication using Auth0</li>
-              <li>Handled routing with React Router</li>
-              <li>Managed forms using Formik and validation with Yup</li>
-              <li>Integrated both internal and third-party APIs</li>
-              <li>Implemented error tracking using Sentry</li>
-              <li>Optimized performance to improve PageSpeed</li>
-              <li>Collaborated with team and worked closely with with backend developers.</li>
+              <li>{t("projects.description3")}</li>
+              <li>{t("projects.description4")}</li>
+              <li>{t("projects.description5")}</li>
+              <li>{t("projects.description6")}</li>
+              <li>{t("projects.description7")}</li>
+              <li>{t("projects.description8")}</li>
+              <li>{t("projects.description9")}</li>
+              <li>{t("projects.description10")}</li>
+              <li>{t("projects.description11")}</li>{" "}
             </ul>
 
             <div className="mt-5 w-full p-1 max-mobile:text-center">

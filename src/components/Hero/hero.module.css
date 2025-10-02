@@ -1,7 +1,7 @@
 .slider {
   flex-direction: column;
   transition: all cubic-bezier(0.71, 0.03, 0.34, 1);
-  width: 135px;
+  width: 145px;
   position: relative;
   overflow: hidden;
 }

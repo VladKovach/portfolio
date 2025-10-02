@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { useSectionObserver } from "../../hooks/useSectionObserver";
 import { GetSvg } from "../GetSvg";
 import styles from "./hero.module.css";
@@ -13,11 +14,11 @@ const cubes = [
   { id: "cube-8", svg: "Vite", svg2: "Webpack" },
   { id: "cube-9", svg: "Rest", svg2: "Jest" },
 ];
-const heroIdeas = ["Imagine", "Plan", "Desire", "Think"];
+const heroIdeas = ["imagine", "plan", "desire", "think"];
 const Hero = () => {
   const { activeSection, hasBeenVisible } = useSectionObserver();
   console.log("activeSection = ", activeSection);
-
+  const { t } = useTranslation();
   return (
     <div
       className=" w-full flex justify-around max-sm:flex-col max-sm:items-center p-5 mt-15 max-sm:mt-0"
@@ -30,32 +31,28 @@ const Hero = () => {
     >
       <div className="flex flex-col  h-full w-2/5 max-sm:w-full mr-15 max-sm:mr-0">
         <h1 className="text-2xl font-bold  ">
-          <span className="dark:text-lightOrange text-darkOrange text-3xl">Let’s</span> Build What
-          You{" "}
+          <span className="dark:text-lightOrange text-darkOrange text-3xl">{t("hero.lets")}</span> {t("hero.buildWhat")}
           <div className={styles.slider}>
             <div className={styles.container}>
               {heroIdeas.map((word) => (
-                <p key={word} className="flex items-center min-w-[135px] pb-2">
-                  <span className="">{word}</span>
-                  <span className="rounded-full  p-2">
+                <p key={word} className="flex items-center min-w-[145px] pb-2">
+                  <span className="">{t(`hero.${word.toLowerCase()}`)}</span>
+                  <span className="rounded-full pb-1">
                     <GetSvg svg={word} />
                   </span>
                 </p>
               ))}
             </div>
-            {/* Imagine&nbsp; <GetSvg svg="idea" /> */}
           </div>
         </h1>
-        <p className="text-lg mt-4 font-bold">
-          <span className="text-darkOrange dark:text-lightOrange text-xl"> Hi there!</span> It's
-          nice to see you😊 I'm Vlad, a frontend developer with a strong desire to create impactful
-          digital experiences.
+        <p className="text-lg mt-4</p> font-bold">
+          <span className="text-darkOrange dark:text-lightOrange text-xl">{t("hero.hiThere")}</span> {t("hero.intro")}
         </p>
         <a
           href="#projects"
-          className="mt-6 px-4 py-2 font-bold w-[140px]  rounded shadow-btn dark:shadow-btnDark hover:shadow-btnhover dark:hover:shadow-btnDarkHover  active:shadow-btnhover dark:active:shadow-btnDarkHover active:scale-98 duration-100 "
+          className="mt-6  py-2 font-bold w-[160px]  rounded shadow-btn dark:shadow-btnDark hover:shadow-btnhover text-center dark:hover:shadow-btnDarkHover  active:shadow-btnhover dark:active:shadow-btnDarkHover active:scale-98 duration-100 "
         >
-          View Projects
+          {t("hero.viewProjects")}
         </a>
       </div>
       <div
