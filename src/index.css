@@ -12,7 +12,7 @@
   --color-lightOrange: #e9a441;
   --color-darkOrange: #f57f17;
   --radius-projectImg: 10% 1%;
-  --breakpoint-mobile: 767px;
+  --breakpoint-mobile: 769px;
   --shadow-btnhover: rgb(0, 0, 0, 0.4) -3px -3px 6px 1px;
   --shadow-btn: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
     rgba(0, 0, 0, 0.2) 0px -3px 0px inset;

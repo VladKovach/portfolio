@@ -35,8 +35,7 @@ export const Header = () => {
             : "shadow-btn dark:shadow-btnDark  w-1/3 rounded active:shadow-btnhover dark:active:shadow-btnDarkHover active:scale-98"
         }`}
       >
-                {t("header.skills")}
-
+        {t("header.skills")}
       </a>
       <a
         href="#projects"
@@ -47,8 +46,7 @@ export const Header = () => {
             : "shadow-btn dark:shadow-btnDark  w-1/3 rounded active:shadow-btnhover dark:active:shadow-btnDarkHover active:scale-98"
         }`}
       >
-                {t("header.projects")}
-
+        {t("header.projects")}
       </a>
       <a
         href="#experience"
@@ -59,8 +57,7 @@ export const Header = () => {
             : "shadow-btn dark:shadow-btnDark  w-1/3 rounded active:shadow-btnhover dark:active:shadow-btnDarkHover active:scale-98"
         }`}
       >
-                {t("header.experience")}
-
+        {t("header.experience")}
       </a>
       <a
         href="#contact"
@@ -71,8 +68,7 @@ export const Header = () => {
             : "shadow-btn dark:shadow-btnDark  w-1/3 rounded active:shadow-btnhover dark:active:shadow-btnDarkHover active:scale-98"
         }`}
       >
-                {t("header.contact")}
-
+        {t("header.contact")}
       </a>
     </>
   );
@@ -99,7 +95,7 @@ export const Header = () => {
         onClick={toggleMenu}
         className={`${
           styles.menuBtn
-        }  hidden border-4 border-backgroundDark dark:border-backgroundLight dark:text-backgroundLight before:bg-backgroundDark dark:before:bg-backgroundLight after:bg-backgroundDark dark:after:bg-backgroundLight  max-mobile:block z-41 ${
+        }  hidden border-4 border-backgroundDark dark:border-backgroundLight dark:text-backgroundLight before:bg-backgroundDark dark:before:bg-backgroundLight after:bg-backgroundDark dark:after:bg-backgroundLight  max-mobile:block  z-41 ${
           isMenuOpen ? styles.menuCloseBtn : ""
         }`}
       >
@@ -111,40 +107,49 @@ export const Header = () => {
           <GetSvg svg="burger" />
         )} */}
       </button>
+      <div className="flex items-center space-x-6">
+        <div className=" space-x-2  inline-flex">
+          {["en", "de"].map((lng) => (
+            <button
+              key={lng}
+              onClick={() => changeLanguage(lng)}
+              className={`
+            px-3 py-1 rounded shadow 
+            flex items-center
+            transition duration-200  mobile:px-1.5  max-mobile:py-0.5 max-mobile:px-1
+            ${
+              i18n.language === lng
+                ? "bg-gradient-to-r from-[#f57f17] to-[#e9a441] text-white shadow-lg scale-105"
+                : "bg-transparent text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700"
+            }
+          `}
+            >
+              <GetSvg svg={lng} />
+              <span className="ml-1 font-bold uppercase max-mobile:font-medium ">{lng}</span>
+            </button>
+          ))}
+        </div>
 
-      <div className=" space-x-2">
-        <button onClick={() => changeLanguage("en")} className="px-3 py-1 border rounded">
-          <p className="flex items-center">
-            <GetSvg svg="en" /> <span className="ml-1"> English </span>
-            {/* <span className="hidden sm:inline">🇩🇪</span> */}
-          </p>
-        </button>
-        <button onClick={() => changeLanguage("de")} className="px-3 py-1 border rounded">
-          {/* <span className="hidden sm:inline">🇩🇪</span> */}
-          <p className="flex items-center">
-            <GetSvg svg="de" /> <span className="ml-1" > Deutsch </span>
-          </p>
-        </button>
+        <div className="w-[60px] h-[25px] inline-flex">
+          <input
+            type="checkbox"
+            id="darkmode"
+            className={styles.darkmode_container}
+            value={theme}
+            checked={theme === "dark"}
+            onChange={() => setTheme(theme === "dark" ? "light" : "dark")}
+          />
+          <label className={styles.cusomLabel} htmlFor="darkmode">
+            <GetSvg svg="sun" />
+            <GetSvg svg="moon" />
+          </label>
+        </div>
       </div>
 
-      <div className="w-[60px] h-[25px] inline-flex">
-        <input
-          type="checkbox"
-          id="darkmode"
-          className={styles.darkmode_container}
-          value={theme}
-          checked={theme === "dark"}
-          onChange={() => setTheme(theme === "dark" ? "light" : "dark")}
-        />
-        <label className={styles.cusomLabel} htmlFor="darkmode">
-          <GetSvg svg="sun" />
-          <GetSvg svg="moon" />
-        </label>
-      </div>
-      {/* for menuMobile is animation neeeded */}
+      {/* for menuMobile  */}
       <div
-        className={`scroll-y-0 mobile:hidden fixed top-0  left-0 w-full  bg-backgroundLight dark:bg-backgroundDark  transition-opacity duration-300  h-full ${
-          isMenuOpen ? "z-40 opacity-100" : "z-[-10] opacity-0"
+        className={`scroll-y-0 mobile:hidden fixed top-0  left-0 w-full  pointer-events-none bg-backgroundLight dark:bg-backgroundDark  transition-opacity duration-300  h-full ${
+          isMenuOpen ? "z-40 opacity-100" : "z-[-10] opacity-0 "
         }`}
       />
 
